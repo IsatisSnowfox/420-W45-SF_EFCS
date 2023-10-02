@@ -33,6 +33,16 @@
       copy:
         src: ./webservers/confs/httpd.conf
         dest: /home/admin/conf
+    - name: COPY DOCKERFILE
+      copy:
+        src: ./webservers/Dockerfile
+        dest: /home/admin/conf
+    - name: CREATE PHP-MYSQLI IMAGE
+      community.docker.docker_image:
+        name: php-mysqli
+        source: build
+        build:
+          path: /home/admin/conf/Dockerfile
 
     - name: CREATE APACHE WEB SERVER
       community.docker.docker_container:
@@ -50,15 +60,11 @@
     - name: CREATE PHP CONTAINER
       community.docker.docker_container:
         name: php
-        image: php:fpm-alpine
+        image: php-mysqli
         networks:
           - name: backend
         volumes:
           - /home/admin/html:/usr/local/apache2/htdocs
-    - name: INSTALL PHP MYSQLI MODULE
-      community.docker.docker_container_exec:
-        container: php
-        command: "docker-php-ext-install mysqli"
     - name: CREATE MARIADB CONTAINER
       community.docker.docker_container:
         name: mariadb
