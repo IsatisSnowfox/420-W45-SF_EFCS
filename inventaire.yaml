@@ -1,0 +1,14 @@
+lbservers:
+  hosts:
+    srv-lb1-2297029:
+      ansible_host: 10.100.2.158
+webservers:
+  hosts:      
+    srv-web1-2297029:
+      ansible_host: 10.100.2.147
+    srv-web2-2297029:
+      ansible_host: 10.100.2.36
+prod:
+  children:
+    webservers:
+    lbservers:

@@ -1,0 +1,823 @@
+2023-09-26 13:49:39,413 p=221367 u=felixgason n=ansible | [WARNING]: Unable to parse /home/felixgason/Dev/420-W45-SF_EFCS/inventaire as
+an inventory source
+
+2023-09-26 13:49:39,414 p=221367 u=felixgason n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-09-26 13:49:39,426 p=221367 u=felixgason n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2023-09-26 13:50:17,770 p=221400 u=felixgason n=ansible | [WARNING]: While constructing a mapping from
+/home/felixgason/Dev/420-W45-SF_EFCS/inventaire.yaml, line 1, column 1, found a
+duplicate dict key (web1). Using last defined value only.
+
+2023-09-26 13:50:18,504 p=221400 u=felixgason n=ansible | control | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-09-26 13:50:19,098 p=221400 u=felixgason n=ansible | srv-lb1-2297029 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-09-26 13:50:19,123 p=221400 u=felixgason n=ansible | srv-web1-2297029 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-09-26 14:07:36,282 p=221675 u=felixgason n=ansible | {"/usr/lib/python3/dist-packages/ansible_collections": {"amazon.aws": {"version": "6.4.0"}, "ansible.netcommon": {"version": "5.2.0"}, "ansible.posix": {"version": "1.5.4"}, "ansible.utils": {"version": "2.11.0"}, "ansible.windows": {"version": "1.14.0"}, "arista.eos": {"version": "6.1.0"}, "awx.awx": {"version": "22.7.0"}, "azure.azcollection": {"version": "1.17.0"}, "check_point.mgmt": {"version": "5.1.1"}, "chocolatey.chocolatey": {"version": "1.5.1"}, "cisco.aci": {"version": "2.7.0"}, "cisco.asa": {"version": "4.0.1"}, "cisco.dnac": {"version": "6.7.4"}, "cisco.intersight": {"version": "1.0.27"}, "cisco.ios": {"version": "4.6.1"}, "cisco.iosxr": {"version": "5.0.3"}, "cisco.ise": {"version": "2.5.15"}, "cisco.meraki": {"version": "2.16.0"}, "cisco.mso": {"version": "2.5.0"}, "cisco.nso": {"version": "1.0.3"}, "cisco.nxos": {"version": "4.4.0"}, "cisco.ucs": {"version": "1.10.0"}, "cloud.common": {"version": "2.1.4"}, "cloudscale_ch.cloud": {"version": "2.3.1"}, "community.aws": {"version": "6.3.0"}, "community.azure": {"version": "2.0.0"}, "community.ciscosmb": {"version": "1.0.6"}, "community.crypto": {"version": "2.15.1"}, "community.digitalocean": {"version": "1.24.0"}, "community.dns": {"version": "2.6.1"}, "community.docker": {"version": "3.4.8"}, "community.fortios": {"version": "1.0.0"}, "community.general": {"version": "7.4.0"}, "community.google": {"version": "1.0.0"}, "community.grafana": {"version": "1.5.4"}, "community.hashi_vault": {"version": "5.0.0"}, "community.hrobot": {"version": "1.8.1"}, "community.libvirt": {"version": "1.2.0"}, "community.mongodb": {"version": "1.6.1"}, "community.mysql": {"version": "3.7.2"}, "community.network": {"version": "5.0.0"}, "community.okd": {"version": "2.3.0"}, "community.postgresql": {"version": "2.4.3"}, "community.proxysql": {"version": "1.5.1"}, "community.rabbitmq": {"version": "1.2.3"}, "community.routeros": {"version": "2.9.0"}, "community.sap": {"version": "1.0.0"}, "community.sap_libs": {"version": "1.4.1"}, "community.skydive": {"version": "1.0.0"}, "community.sops": {"version": "1.6.5"}, "community.vmware": {"version": "3.9.0"}, "community.windows": {"version": "1.13.0"}, "community.zabbix": {"version": "2.1.0"}, "containers.podman": {"version": "1.10.3"}, "cyberark.conjur": {"version": "1.2.0"}, "cyberark.pas": {"version": "1.0.19"}, "dellemc.enterprise_sonic": {"version": "2.2.0"}, "dellemc.openmanage": {"version": "7.6.1"}, "dellemc.powerflex": {"version": "1.8.0"}, "dellemc.unity": {"version": "1.7.1"}, "f5networks.f5_modules": {"version": "1.26.0"}, "fortinet.fortimanager": {"version": "2.2.1"}, "fortinet.fortios": {"version": "2.3.2"}, "frr.frr": {"version": "2.0.2"}, "gluster.gluster": {"version": "1.0.2"}, "google.cloud": {"version": "1.2.0"}, "grafana.grafana": {"version": "2.1.8"}, "hetzner.hcloud": {"version": "1.16.0"}, "hpe.nimble": {"version": "1.1.4"}, "ibm.qradar": {"version": "2.1.0"}, "ibm.spectrum_virtualize": {"version": "1.12.0"}, "infinidat.infinibox": {"version": "1.3.12"}, "infoblox.nios_modules": {"version": "1.5.0"}, "inspur.ispim": {"version": "1.3.0"}, "inspur.sm": {"version": "2.3.0"}, "junipernetworks.junos": {"version": "5.3.0"}, "kubernetes.core": {"version": "2.4.0"}, "lowlydba.sqlserver": {"version": "2.2.1"}, "microsoft.ad": {"version": "1.3.0"}, "netapp.aws": {"version": "21.7.0"}, "netapp.azure": {"version": "21.10.0"}, "netapp.cloudmanager": {"version": "21.22.0"}, "netapp.elementsw": {"version": "21.7.0"}, "netapp.ontap": {"version": "22.7.0"}, "netapp.storagegrid": {"version": "21.11.1"}, "netapp.um_info": {"version": "21.8.0"}, "netapp_eseries.santricity": {"version": "1.4.0"}, "netbox.netbox": {"version": "3.14.0"}, "ngine_io.cloudstack": {"version": "2.3.0"}, "ngine_io.exoscale": {"version": "1.1.0"}, "ngine_io.vultr": {"version": "1.1.3"}, "openstack.cloud": {"version": "2.1.0"}, "openvswitch.openvswitch": {"version": "2.1.1"}, "ovirt.ovirt": {"version": "3.1.3"}, "purestorage.flasharray": {"version": "1.21.0"}, "purestorage.flashblade": {"version": "1.13.1"}, "purestorage.fusion": {"version": "1.6.0"}, "sensu.sensu_go": {"version": "1.14.0"}, "servicenow.servicenow": {"version": "1.0.6"}, "splunk.es": {"version": "2.1.0"}, "t_systems_mms.icinga_director": {"version": "1.33.1"}, "telekom_mms.icinga_director": {"version": "1.34.1"}, "theforeman.foreman": {"version": "3.14.0"}, "vmware.vmware_rest": {"version": "2.3.1"}, "vultr.cloud": {"version": "1.9.0"}, "vyos.vyos": {"version": "4.1.0"}, "wti.remote": {"version": "1.0.5"}}}
+2023-09-26 14:07:38,339 p=221686 u=felixgason n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: lbservers
+
+2023-09-26 14:07:38,340 p=221686 u=felixgason n=ansible | playbook: loadbalancer.yaml
+2023-09-26 14:07:39,966 p=221691 u=felixgason n=ansible | {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO",
+    "ansible.netcommon.enable": "Switch to elevated permissions on a network device",
+    "community.general.doas": "Do As user",
+    "community.general.dzdo": "Centrify's Direct Authorize",
+    "community.general.ksu": "Kerberos substitute user",
+    "community.general.machinectl": "Systemd's machinectl privilege escalation",
+    "community.general.pbrun": "PowerBroker run",
+    "community.general.pfexec": "profile based execution",
+    "community.general.pmrun": "Privilege Manager run",
+    "community.general.sesu": "CA Privileged Access Manager",
+    "community.general.sudosu": "Run tasks using sudo su -",
+    "containers.podman.podman_unshare": "Run tasks using podman unshare"
+}
+2023-09-26 14:07:40,025 p=221669 u=felixgason n=ansiblelint | Listing 1 violation(s) that are fatal
+2023-09-26 14:08:04,890 p=221728 u=felixgason n=ansible | {"/usr/lib/python3/dist-packages/ansible_collections": {"amazon.aws": {"version": "6.4.0"}, "ansible.netcommon": {"version": "5.2.0"}, "ansible.posix": {"version": "1.5.4"}, "ansible.utils": {"version": "2.11.0"}, "ansible.windows": {"version": "1.14.0"}, "arista.eos": {"version": "6.1.0"}, "awx.awx": {"version": "22.7.0"}, "azure.azcollection": {"version": "1.17.0"}, "check_point.mgmt": {"version": "5.1.1"}, "chocolatey.chocolatey": {"version": "1.5.1"}, "cisco.aci": {"version": "2.7.0"}, "cisco.asa": {"version": "4.0.1"}, "cisco.dnac": {"version": "6.7.4"}, "cisco.intersight": {"version": "1.0.27"}, "cisco.ios": {"version": "4.6.1"}, "cisco.iosxr": {"version": "5.0.3"}, "cisco.ise": {"version": "2.5.15"}, "cisco.meraki": {"version": "2.16.0"}, "cisco.mso": {"version": "2.5.0"}, "cisco.nso": {"version": "1.0.3"}, "cisco.nxos": {"version": "4.4.0"}, "cisco.ucs": {"version": "1.10.0"}, "cloud.common": {"version": "2.1.4"}, "cloudscale_ch.cloud": {"version": "2.3.1"}, "community.aws": {"version": "6.3.0"}, "community.azure": {"version": "2.0.0"}, "community.ciscosmb": {"version": "1.0.6"}, "community.crypto": {"version": "2.15.1"}, "community.digitalocean": {"version": "1.24.0"}, "community.dns": {"version": "2.6.1"}, "community.docker": {"version": "3.4.8"}, "community.fortios": {"version": "1.0.0"}, "community.general": {"version": "7.4.0"}, "community.google": {"version": "1.0.0"}, "community.grafana": {"version": "1.5.4"}, "community.hashi_vault": {"version": "5.0.0"}, "community.hrobot": {"version": "1.8.1"}, "community.libvirt": {"version": "1.2.0"}, "community.mongodb": {"version": "1.6.1"}, "community.mysql": {"version": "3.7.2"}, "community.network": {"version": "5.0.0"}, "community.okd": {"version": "2.3.0"}, "community.postgresql": {"version": "2.4.3"}, "community.proxysql": {"version": "1.5.1"}, "community.rabbitmq": {"version": "1.2.3"}, "community.routeros": {"version": "2.9.0"}, "community.sap": {"version": "1.0.0"}, "community.sap_libs": {"version": "1.4.1"}, "community.skydive": {"version": "1.0.0"}, "community.sops": {"version": "1.6.5"}, "community.vmware": {"version": "3.9.0"}, "community.windows": {"version": "1.13.0"}, "community.zabbix": {"version": "2.1.0"}, "containers.podman": {"version": "1.10.3"}, "cyberark.conjur": {"version": "1.2.0"}, "cyberark.pas": {"version": "1.0.19"}, "dellemc.enterprise_sonic": {"version": "2.2.0"}, "dellemc.openmanage": {"version": "7.6.1"}, "dellemc.powerflex": {"version": "1.8.0"}, "dellemc.unity": {"version": "1.7.1"}, "f5networks.f5_modules": {"version": "1.26.0"}, "fortinet.fortimanager": {"version": "2.2.1"}, "fortinet.fortios": {"version": "2.3.2"}, "frr.frr": {"version": "2.0.2"}, "gluster.gluster": {"version": "1.0.2"}, "google.cloud": {"version": "1.2.0"}, "grafana.grafana": {"version": "2.1.8"}, "hetzner.hcloud": {"version": "1.16.0"}, "hpe.nimble": {"version": "1.1.4"}, "ibm.qradar": {"version": "2.1.0"}, "ibm.spectrum_virtualize": {"version": "1.12.0"}, "infinidat.infinibox": {"version": "1.3.12"}, "infoblox.nios_modules": {"version": "1.5.0"}, "inspur.ispim": {"version": "1.3.0"}, "inspur.sm": {"version": "2.3.0"}, "junipernetworks.junos": {"version": "5.3.0"}, "kubernetes.core": {"version": "2.4.0"}, "lowlydba.sqlserver": {"version": "2.2.1"}, "microsoft.ad": {"version": "1.3.0"}, "netapp.aws": {"version": "21.7.0"}, "netapp.azure": {"version": "21.10.0"}, "netapp.cloudmanager": {"version": "21.22.0"}, "netapp.elementsw": {"version": "21.7.0"}, "netapp.ontap": {"version": "22.7.0"}, "netapp.storagegrid": {"version": "21.11.1"}, "netapp.um_info": {"version": "21.8.0"}, "netapp_eseries.santricity": {"version": "1.4.0"}, "netbox.netbox": {"version": "3.14.0"}, "ngine_io.cloudstack": {"version": "2.3.0"}, "ngine_io.exoscale": {"version": "1.1.0"}, "ngine_io.vultr": {"version": "1.1.3"}, "openstack.cloud": {"version": "2.1.0"}, "openvswitch.openvswitch": {"version": "2.1.1"}, "ovirt.ovirt": {"version": "3.1.3"}, "purestorage.flasharray": {"version": "1.21.0"}, "purestorage.flashblade": {"version": "1.13.1"}, "purestorage.fusion": {"version": "1.6.0"}, "sensu.sensu_go": {"version": "1.14.0"}, "servicenow.servicenow": {"version": "1.0.6"}, "splunk.es": {"version": "2.1.0"}, "t_systems_mms.icinga_director": {"version": "1.33.1"}, "telekom_mms.icinga_director": {"version": "1.34.1"}, "theforeman.foreman": {"version": "3.14.0"}, "vmware.vmware_rest": {"version": "2.3.1"}, "vultr.cloud": {"version": "1.9.0"}, "vyos.vyos": {"version": "4.1.0"}, "wti.remote": {"version": "1.0.5"}}}
+2023-09-26 14:08:06,761 p=221739 u=felixgason n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: lbservers
+
+2023-09-26 14:08:06,762 p=221739 u=felixgason n=ansible | playbook: loadbalancer.yaml
+2023-09-26 14:08:08,282 p=221744 u=felixgason n=ansible | {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO",
+    "ansible.netcommon.enable": "Switch to elevated permissions on a network device",
+    "community.general.doas": "Do As user",
+    "community.general.dzdo": "Centrify's Direct Authorize",
+    "community.general.ksu": "Kerberos substitute user",
+    "community.general.machinectl": "Systemd's machinectl privilege escalation",
+    "community.general.pbrun": "PowerBroker run",
+    "community.general.pfexec": "profile based execution",
+    "community.general.pmrun": "Privilege Manager run",
+    "community.general.sesu": "CA Privileged Access Manager",
+    "community.general.sudosu": "Run tasks using sudo su -",
+    "containers.podman.podman_unshare": "Run tasks using podman unshare"
+}
+2023-09-26 14:08:08,339 p=221722 u=felixgason n=ansiblelint | Listing 1 violation(s) that are fatal
+2023-09-26 14:08:27,945 p=221774 u=felixgason n=ansible | {"/usr/lib/python3/dist-packages/ansible_collections": {"amazon.aws": {"version": "6.4.0"}, "ansible.netcommon": {"version": "5.2.0"}, "ansible.posix": {"version": "1.5.4"}, "ansible.utils": {"version": "2.11.0"}, "ansible.windows": {"version": "1.14.0"}, "arista.eos": {"version": "6.1.0"}, "awx.awx": {"version": "22.7.0"}, "azure.azcollection": {"version": "1.17.0"}, "check_point.mgmt": {"version": "5.1.1"}, "chocolatey.chocolatey": {"version": "1.5.1"}, "cisco.aci": {"version": "2.7.0"}, "cisco.asa": {"version": "4.0.1"}, "cisco.dnac": {"version": "6.7.4"}, "cisco.intersight": {"version": "1.0.27"}, "cisco.ios": {"version": "4.6.1"}, "cisco.iosxr": {"version": "5.0.3"}, "cisco.ise": {"version": "2.5.15"}, "cisco.meraki": {"version": "2.16.0"}, "cisco.mso": {"version": "2.5.0"}, "cisco.nso": {"version": "1.0.3"}, "cisco.nxos": {"version": "4.4.0"}, "cisco.ucs": {"version": "1.10.0"}, "cloud.common": {"version": "2.1.4"}, "cloudscale_ch.cloud": {"version": "2.3.1"}, "community.aws": {"version": "6.3.0"}, "community.azure": {"version": "2.0.0"}, "community.ciscosmb": {"version": "1.0.6"}, "community.crypto": {"version": "2.15.1"}, "community.digitalocean": {"version": "1.24.0"}, "community.dns": {"version": "2.6.1"}, "community.docker": {"version": "3.4.8"}, "community.fortios": {"version": "1.0.0"}, "community.general": {"version": "7.4.0"}, "community.google": {"version": "1.0.0"}, "community.grafana": {"version": "1.5.4"}, "community.hashi_vault": {"version": "5.0.0"}, "community.hrobot": {"version": "1.8.1"}, "community.libvirt": {"version": "1.2.0"}, "community.mongodb": {"version": "1.6.1"}, "community.mysql": {"version": "3.7.2"}, "community.network": {"version": "5.0.0"}, "community.okd": {"version": "2.3.0"}, "community.postgresql": {"version": "2.4.3"}, "community.proxysql": {"version": "1.5.1"}, "community.rabbitmq": {"version": "1.2.3"}, "community.routeros": {"version": "2.9.0"}, "community.sap": {"version": "1.0.0"}, "community.sap_libs": {"version": "1.4.1"}, "community.skydive": {"version": "1.0.0"}, "community.sops": {"version": "1.6.5"}, "community.vmware": {"version": "3.9.0"}, "community.windows": {"version": "1.13.0"}, "community.zabbix": {"version": "2.1.0"}, "containers.podman": {"version": "1.10.3"}, "cyberark.conjur": {"version": "1.2.0"}, "cyberark.pas": {"version": "1.0.19"}, "dellemc.enterprise_sonic": {"version": "2.2.0"}, "dellemc.openmanage": {"version": "7.6.1"}, "dellemc.powerflex": {"version": "1.8.0"}, "dellemc.unity": {"version": "1.7.1"}, "f5networks.f5_modules": {"version": "1.26.0"}, "fortinet.fortimanager": {"version": "2.2.1"}, "fortinet.fortios": {"version": "2.3.2"}, "frr.frr": {"version": "2.0.2"}, "gluster.gluster": {"version": "1.0.2"}, "google.cloud": {"version": "1.2.0"}, "grafana.grafana": {"version": "2.1.8"}, "hetzner.hcloud": {"version": "1.16.0"}, "hpe.nimble": {"version": "1.1.4"}, "ibm.qradar": {"version": "2.1.0"}, "ibm.spectrum_virtualize": {"version": "1.12.0"}, "infinidat.infinibox": {"version": "1.3.12"}, "infoblox.nios_modules": {"version": "1.5.0"}, "inspur.ispim": {"version": "1.3.0"}, "inspur.sm": {"version": "2.3.0"}, "junipernetworks.junos": {"version": "5.3.0"}, "kubernetes.core": {"version": "2.4.0"}, "lowlydba.sqlserver": {"version": "2.2.1"}, "microsoft.ad": {"version": "1.3.0"}, "netapp.aws": {"version": "21.7.0"}, "netapp.azure": {"version": "21.10.0"}, "netapp.cloudmanager": {"version": "21.22.0"}, "netapp.elementsw": {"version": "21.7.0"}, "netapp.ontap": {"version": "22.7.0"}, "netapp.storagegrid": {"version": "21.11.1"}, "netapp.um_info": {"version": "21.8.0"}, "netapp_eseries.santricity": {"version": "1.4.0"}, "netbox.netbox": {"version": "3.14.0"}, "ngine_io.cloudstack": {"version": "2.3.0"}, "ngine_io.exoscale": {"version": "1.1.0"}, "ngine_io.vultr": {"version": "1.1.3"}, "openstack.cloud": {"version": "2.1.0"}, "openvswitch.openvswitch": {"version": "2.1.1"}, "ovirt.ovirt": {"version": "3.1.3"}, "purestorage.flasharray": {"version": "1.21.0"}, "purestorage.flashblade": {"version": "1.13.1"}, "purestorage.fusion": {"version": "1.6.0"}, "sensu.sensu_go": {"version": "1.14.0"}, "servicenow.servicenow": {"version": "1.0.6"}, "splunk.es": {"version": "2.1.0"}, "t_systems_mms.icinga_director": {"version": "1.33.1"}, "telekom_mms.icinga_director": {"version": "1.34.1"}, "theforeman.foreman": {"version": "3.14.0"}, "vmware.vmware_rest": {"version": "2.3.1"}, "vultr.cloud": {"version": "1.9.0"}, "vyos.vyos": {"version": "4.1.0"}, "wti.remote": {"version": "1.0.5"}}}
+2023-09-26 14:08:29,815 p=221785 u=felixgason n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: lbservers
+
+2023-09-26 14:08:29,815 p=221785 u=felixgason n=ansible | playbook: loadbalancer.yaml
+2023-09-26 14:08:31,335 p=221790 u=felixgason n=ansible | {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO",
+    "ansible.netcommon.enable": "Switch to elevated permissions on a network device",
+    "community.general.doas": "Do As user",
+    "community.general.dzdo": "Centrify's Direct Authorize",
+    "community.general.ksu": "Kerberos substitute user",
+    "community.general.machinectl": "Systemd's machinectl privilege escalation",
+    "community.general.pbrun": "PowerBroker run",
+    "community.general.pfexec": "profile based execution",
+    "community.general.pmrun": "Privilege Manager run",
+    "community.general.sesu": "CA Privileged Access Manager",
+    "community.general.sudosu": "Run tasks using sudo su -",
+    "containers.podman.podman_unshare": "Run tasks using podman unshare"
+}
+2023-09-26 14:08:31,398 p=221768 u=felixgason n=ansiblelint | Listing 2 violation(s) that are fatal
+2023-09-26 14:08:48,297 p=221823 u=felixgason n=ansible | {"/usr/lib/python3/dist-packages/ansible_collections": {"amazon.aws": {"version": "6.4.0"}, "ansible.netcommon": {"version": "5.2.0"}, "ansible.posix": {"version": "1.5.4"}, "ansible.utils": {"version": "2.11.0"}, "ansible.windows": {"version": "1.14.0"}, "arista.eos": {"version": "6.1.0"}, "awx.awx": {"version": "22.7.0"}, "azure.azcollection": {"version": "1.17.0"}, "check_point.mgmt": {"version": "5.1.1"}, "chocolatey.chocolatey": {"version": "1.5.1"}, "cisco.aci": {"version": "2.7.0"}, "cisco.asa": {"version": "4.0.1"}, "cisco.dnac": {"version": "6.7.4"}, "cisco.intersight": {"version": "1.0.27"}, "cisco.ios": {"version": "4.6.1"}, "cisco.iosxr": {"version": "5.0.3"}, "cisco.ise": {"version": "2.5.15"}, "cisco.meraki": {"version": "2.16.0"}, "cisco.mso": {"version": "2.5.0"}, "cisco.nso": {"version": "1.0.3"}, "cisco.nxos": {"version": "4.4.0"}, "cisco.ucs": {"version": "1.10.0"}, "cloud.common": {"version": "2.1.4"}, "cloudscale_ch.cloud": {"version": "2.3.1"}, "community.aws": {"version": "6.3.0"}, "community.azure": {"version": "2.0.0"}, "community.ciscosmb": {"version": "1.0.6"}, "community.crypto": {"version": "2.15.1"}, "community.digitalocean": {"version": "1.24.0"}, "community.dns": {"version": "2.6.1"}, "community.docker": {"version": "3.4.8"}, "community.fortios": {"version": "1.0.0"}, "community.general": {"version": "7.4.0"}, "community.google": {"version": "1.0.0"}, "community.grafana": {"version": "1.5.4"}, "community.hashi_vault": {"version": "5.0.0"}, "community.hrobot": {"version": "1.8.1"}, "community.libvirt": {"version": "1.2.0"}, "community.mongodb": {"version": "1.6.1"}, "community.mysql": {"version": "3.7.2"}, "community.network": {"version": "5.0.0"}, "community.okd": {"version": "2.3.0"}, "community.postgresql": {"version": "2.4.3"}, "community.proxysql": {"version": "1.5.1"}, "community.rabbitmq": {"version": "1.2.3"}, "community.routeros": {"version": "2.9.0"}, "community.sap": {"version": "1.0.0"}, "community.sap_libs": {"version": "1.4.1"}, "community.skydive": {"version": "1.0.0"}, "community.sops": {"version": "1.6.5"}, "community.vmware": {"version": "3.9.0"}, "community.windows": {"version": "1.13.0"}, "community.zabbix": {"version": "2.1.0"}, "containers.podman": {"version": "1.10.3"}, "cyberark.conjur": {"version": "1.2.0"}, "cyberark.pas": {"version": "1.0.19"}, "dellemc.enterprise_sonic": {"version": "2.2.0"}, "dellemc.openmanage": {"version": "7.6.1"}, "dellemc.powerflex": {"version": "1.8.0"}, "dellemc.unity": {"version": "1.7.1"}, "f5networks.f5_modules": {"version": "1.26.0"}, "fortinet.fortimanager": {"version": "2.2.1"}, "fortinet.fortios": {"version": "2.3.2"}, "frr.frr": {"version": "2.0.2"}, "gluster.gluster": {"version": "1.0.2"}, "google.cloud": {"version": "1.2.0"}, "grafana.grafana": {"version": "2.1.8"}, "hetzner.hcloud": {"version": "1.16.0"}, "hpe.nimble": {"version": "1.1.4"}, "ibm.qradar": {"version": "2.1.0"}, "ibm.spectrum_virtualize": {"version": "1.12.0"}, "infinidat.infinibox": {"version": "1.3.12"}, "infoblox.nios_modules": {"version": "1.5.0"}, "inspur.ispim": {"version": "1.3.0"}, "inspur.sm": {"version": "2.3.0"}, "junipernetworks.junos": {"version": "5.3.0"}, "kubernetes.core": {"version": "2.4.0"}, "lowlydba.sqlserver": {"version": "2.2.1"}, "microsoft.ad": {"version": "1.3.0"}, "netapp.aws": {"version": "21.7.0"}, "netapp.azure": {"version": "21.10.0"}, "netapp.cloudmanager": {"version": "21.22.0"}, "netapp.elementsw": {"version": "21.7.0"}, "netapp.ontap": {"version": "22.7.0"}, "netapp.storagegrid": {"version": "21.11.1"}, "netapp.um_info": {"version": "21.8.0"}, "netapp_eseries.santricity": {"version": "1.4.0"}, "netbox.netbox": {"version": "3.14.0"}, "ngine_io.cloudstack": {"version": "2.3.0"}, "ngine_io.exoscale": {"version": "1.1.0"}, "ngine_io.vultr": {"version": "1.1.3"}, "openstack.cloud": {"version": "2.1.0"}, "openvswitch.openvswitch": {"version": "2.1.1"}, "ovirt.ovirt": {"version": "3.1.3"}, "purestorage.flasharray": {"version": "1.21.0"}, "purestorage.flashblade": {"version": "1.13.1"}, "purestorage.fusion": {"version": "1.6.0"}, "sensu.sensu_go": {"version": "1.14.0"}, "servicenow.servicenow": {"version": "1.0.6"}, "splunk.es": {"version": "2.1.0"}, "t_systems_mms.icinga_director": {"version": "1.33.1"}, "telekom_mms.icinga_director": {"version": "1.34.1"}, "theforeman.foreman": {"version": "3.14.0"}, "vmware.vmware_rest": {"version": "2.3.1"}, "vultr.cloud": {"version": "1.9.0"}, "vyos.vyos": {"version": "4.1.0"}, "wti.remote": {"version": "1.0.5"}}}
+2023-09-26 14:08:50,212 p=221834 u=felixgason n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: lbservers
+
+2023-09-26 14:08:50,213 p=221834 u=felixgason n=ansible | playbook: loadbalancer.yaml
+2023-09-26 14:08:51,770 p=221839 u=felixgason n=ansible | {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO",
+    "ansible.netcommon.enable": "Switch to elevated permissions on a network device",
+    "community.general.doas": "Do As user",
+    "community.general.dzdo": "Centrify's Direct Authorize",
+    "community.general.ksu": "Kerberos substitute user",
+    "community.general.machinectl": "Systemd's machinectl privilege escalation",
+    "community.general.pbrun": "PowerBroker run",
+    "community.general.pfexec": "profile based execution",
+    "community.general.pmrun": "Privilege Manager run",
+    "community.general.sesu": "CA Privileged Access Manager",
+    "community.general.sudosu": "Run tasks using sudo su -",
+    "containers.podman.podman_unshare": "Run tasks using podman unshare"
+}
+2023-09-26 14:09:27,932 p=221857 u=felixgason n=ansible | [WARNING]: Unable to parse /home/felixgason/Dev/420-W45-SF_EFCS/inventaire as
+an inventory source
+
+2023-09-26 14:09:27,933 p=221857 u=felixgason n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-09-26 14:09:27,937 p=221857 u=felixgason n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2023-09-26 14:09:28,109 p=221857 u=felixgason n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: lbservers
+
+2023-09-26 14:09:28,110 p=221857 u=felixgason n=ansible | PLAY [Docker Nginx Load Balancer] **********************************************
+2023-09-26 14:09:28,110 p=221857 u=felixgason n=ansible | skipping: no hosts matched
+2023-09-26 14:09:28,110 p=221857 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 14:09:45,702 p=221888 u=felixgason n=ansible | [WARNING]: While constructing a mapping from
+/home/felixgason/Dev/420-W45-SF_EFCS/inventaire.yaml, line 7, column 5, found a
+duplicate dict key (srv-web1-2297029). Using last defined value only.
+
+2023-09-26 14:09:45,875 p=221888 u=felixgason n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: lbservers
+
+2023-09-26 14:09:45,876 p=221888 u=felixgason n=ansible | PLAY [Docker Nginx Load Balancer] **********************************************
+2023-09-26 14:09:45,876 p=221888 u=felixgason n=ansible | skipping: no hosts matched
+2023-09-26 14:09:45,876 p=221888 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 14:10:09,873 p=221917 u=felixgason n=ansible | PLAY [Docker Nginx Load Balancer] **********************************************
+2023-09-26 14:10:09,924 p=221917 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 14:10:12,080 p=221917 u=felixgason n=ansible | ok: [srv-lb1-2297029]
+2023-09-26 14:10:12,115 p=221917 u=felixgason n=ansible | TASK [CREATE NGINX LOAD BALANCER] **********************************************
+2023-09-26 14:10:13,057 p=221917 u=felixgason n=ansible | fatal: [srv-lb1-2297029]: FAILED! => {"changed": false, "msg": "Error connecting: Error while fetching server API version: ('Connection aborted.', FileNotFoundError(2, 'No such file or directory'))"}
+2023-09-26 14:10:13,059 p=221917 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 14:10:13,060 p=221917 u=felixgason n=ansible | srv-lb1-2297029            : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-26 14:11:01,007 p=221969 u=felixgason n=ansible | srv-lb1-2297029 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-09-26 14:11:01,624 p=221969 u=felixgason n=ansible | srv-web2-2297029 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-09-26 14:11:01,657 p=221969 u=felixgason n=ansible | srv-web1-2297029 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-09-26 14:15:35,242 p=222095 u=felixgason n=ansible | srv-web1-2297029 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-09-26 14:15:35,246 p=222095 u=felixgason n=ansible | srv-lb1-2297029 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-09-26 14:15:35,268 p=222095 u=felixgason n=ansible | srv-web2-2297029 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-09-26 14:15:54,974 p=222163 u=felixgason n=ansible | PLAY [Docker Nginx Load Balancer] **********************************************
+2023-09-26 14:15:54,985 p=222163 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 14:15:55,575 p=222163 u=felixgason n=ansible | fatal: [srv-lb1-2297029]: FAILED! => {"msg": "Missing sudo password"}
+2023-09-26 14:15:55,578 p=222163 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 14:15:55,578 p=222163 u=felixgason n=ansible | srv-lb1-2297029            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-26 14:16:57,134 p=222263 u=felixgason n=ansible | ERROR! Decryption failed (no vault secrets were found that could decrypt) for /home/felixgason/Dev/420-W45-SF_EFCS/vars/secrets-vars.yaml
+2023-09-26 14:17:04,450 p=222280 u=felixgason n=ansible | PLAY [Docker Nginx Load Balancer] **********************************************
+2023-09-26 14:17:04,460 p=222280 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 14:17:05,619 p=222280 u=felixgason n=ansible | fatal: [srv-lb1-2297029]: FAILED! => {"msg": "Missing sudo password"}
+2023-09-26 14:17:05,629 p=222280 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 14:17:05,630 p=222280 u=felixgason n=ansible | srv-lb1-2297029            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-26 14:19:09,443 p=222345 u=felixgason n=ansible | PLAY [Docker Nginx Load Balancer] **********************************************
+2023-09-26 14:19:09,484 p=222345 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 14:19:11,726 p=222345 u=felixgason n=ansible | ok: [srv-lb1-2297029]
+2023-09-26 14:19:11,767 p=222345 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 14:20:08,181 p=222345 u=felixgason n=ansible | changed: [srv-lb1-2297029]
+2023-09-26 14:20:08,297 p=222345 u=felixgason n=ansible | TASK [CREATE NGINX LOAD BALANCER] **********************************************
+2023-09-26 14:20:11,818 p=222345 u=felixgason n=ansible | changed: [srv-lb1-2297029]
+2023-09-26 14:20:11,966 p=222345 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 14:20:11,967 p=222345 u=felixgason n=ansible | srv-lb1-2297029            : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 15:13:22,218 p=223510 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 15:13:22,273 p=223510 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 15:13:24,638 p=223510 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:13:24,696 p=223510 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:13:24,742 p=223510 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 15:14:14,637 p=223510 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 15:14:14,808 p=223510 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 15:14:14,992 p=223510 u=felixgason n=ansible | TASK [CREATE APACHE WEB SERVER] ************************************************
+2023-09-26 15:14:15,991 p=223510 u=felixgason n=ansible | fatal: [srv-web2-2297029]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (community.docker.docker_container) module: volume. Supported parameters include: api_version, auto_remove, blkio_weight, ca_cert, cap_drop, capabilities, cgroup_parent, cgroupns_mode, cleanup, client_cert, client_key, command, command_handling, comparisons, container_default_behavior, cpu_period, cpu_quota, cpu_shares, cpus, cpuset_cpus, cpuset_mems, debug, default_host_ip, detach, device_read_bps, device_read_iops, device_requests, device_write_bps, device_write_iops, devices, dns_opts, dns_search_domains, dns_servers, docker_host, domainname, entrypoint, env, env_file, etc_hosts, exposed_ports, force_kill, groups, healthcheck, hostname, ignore_image, image, image_comparison, image_label_mismatch, image_name_mismatch, init, interactive, ipc_mode, keep_volumes, kernel_memory, kill_signal, labels, links, log_driver, log_options, mac_address, memory, memory_reservation, memory_swap, memory_swappiness, mounts, name, network_mode, networks, networks_cli_compatible, oom_killer, oom_score_adj, output_logs, paused, pid_mode, pids_limit, platform, privileged, publish_all_ports, published_ports, pull, purge_networks, read_only, recreate, removal_wait_timeout, restart, restart_policy, restart_retries, runtime, security_opts, shm_size, ssl_version, state, stop_signal, stop_timeout, storage_opts, sysctls, timeout, tls, tls_hostname, tmpfs, tty, ulimits, use_ssh_client, user, userns_mode, uts, validate_certs, volume_driver, volumes, volumes_from, working_dir (cacert_path, cert_path, docker_api_version, docker_url, expose, exposed, forcekill, key_path, log_opt, ports, tls_ca_cert, tls_client_cert, tls_client_key, tls_verify)."}
+2023-09-26 15:14:16,011 p=223510 u=felixgason n=ansible | fatal: [srv-web1-2297029]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (community.docker.docker_container) module: volume. Supported parameters include: api_version, auto_remove, blkio_weight, ca_cert, cap_drop, capabilities, cgroup_parent, cgroupns_mode, cleanup, client_cert, client_key, command, command_handling, comparisons, container_default_behavior, cpu_period, cpu_quota, cpu_shares, cpus, cpuset_cpus, cpuset_mems, debug, default_host_ip, detach, device_read_bps, device_read_iops, device_requests, device_write_bps, device_write_iops, devices, dns_opts, dns_search_domains, dns_servers, docker_host, domainname, entrypoint, env, env_file, etc_hosts, exposed_ports, force_kill, groups, healthcheck, hostname, ignore_image, image, image_comparison, image_label_mismatch, image_name_mismatch, init, interactive, ipc_mode, keep_volumes, kernel_memory, kill_signal, labels, links, log_driver, log_options, mac_address, memory, memory_reservation, memory_swap, memory_swappiness, mounts, name, network_mode, networks, networks_cli_compatible, oom_killer, oom_score_adj, output_logs, paused, pid_mode, pids_limit, platform, privileged, publish_all_ports, published_ports, pull, purge_networks, read_only, recreate, removal_wait_timeout, restart, restart_policy, restart_retries, runtime, security_opts, shm_size, ssl_version, state, stop_signal, stop_timeout, storage_opts, sysctls, timeout, tls, tls_hostname, tmpfs, tty, ulimits, use_ssh_client, user, userns_mode, uts, validate_certs, volume_driver, volumes, volumes_from, working_dir (cacert_path, cert_path, docker_api_version, docker_url, expose, exposed, forcekill, key_path, log_opt, ports, tls_ca_cert, tls_client_cert, tls_client_key, tls_verify)."}
+2023-09-26 15:14:16,013 p=223510 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 15:14:16,013 p=223510 u=felixgason n=ansible | srv-web1-2297029           : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-26 15:14:16,013 p=223510 u=felixgason n=ansible | srv-web2-2297029           : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-26 15:14:56,173 p=223612 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 15:14:56,217 p=223612 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 15:14:57,798 p=223612 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:14:57,881 p=223612 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:14:57,925 p=223612 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 15:15:00,243 p=223612 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:15:00,258 p=223612 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:15:00,441 p=223612 u=felixgason n=ansible | TASK [CREATE APACHE WEB SERVER] ************************************************
+2023-09-26 15:15:04,288 p=223612 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 15:15:04,416 p=223612 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 15:15:04,465 p=223612 u=felixgason n=ansible | TASK [CREATE PHP SERVER] *******************************************************
+2023-09-26 15:15:07,718 p=223612 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 15:15:07,920 p=223612 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 15:15:07,967 p=223612 u=felixgason n=ansible | TASK [UPDATE PHP SERVER] *******************************************************
+2023-09-26 15:15:30,900 p=223612 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 15:15:31,141 p=223612 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 15:15:31,429 p=223612 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 15:15:31,429 p=223612 u=felixgason n=ansible | srv-web1-2297029           : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 15:15:31,429 p=223612 u=felixgason n=ansible | srv-web2-2297029           : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 15:36:48,289 p=223912 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 15:36:48,329 p=223912 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 15:36:50,998 p=223912 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:36:51,011 p=223912 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:36:51,049 p=223912 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 15:36:53,366 p=223912 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:36:53,583 p=223912 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:36:53,773 p=223912 u=felixgason n=ansible | TASK [CREATE APACHE WEB SERVER] ************************************************
+2023-09-26 15:36:55,090 p=223912 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 15:36:55,111 p=223912 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 15:36:55,153 p=223912 u=felixgason n=ansible | TASK [CREATE PHP CONTAINER] ****************************************************
+2023-09-26 15:36:55,768 p=223912 u=felixgason n=ansible | fatal: [srv-web1-2297029]: FAILED! => {"changed": false, "msg": "dictionary requested, could not parse JSON or key=value"}
+2023-09-26 15:36:55,839 p=223912 u=felixgason n=ansible | fatal: [srv-web2-2297029]: FAILED! => {"changed": false, "msg": "dictionary requested, could not parse JSON or key=value"}
+2023-09-26 15:36:55,841 p=223912 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 15:36:55,841 p=223912 u=felixgason n=ansible | srv-web1-2297029           : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-26 15:36:55,841 p=223912 u=felixgason n=ansible | srv-web2-2297029           : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-26 15:46:46,205 p=224058 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 15:46:46,252 p=224058 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 15:46:48,808 p=224058 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:46:48,818 p=224058 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:46:48,870 p=224058 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 15:46:51,250 p=224058 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:46:51,366 p=224058 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:46:51,554 p=224058 u=felixgason n=ansible | TASK [CREATE HTML DIRECTORY] ***************************************************
+2023-09-26 15:46:52,100 p=224058 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 15:46:52,102 p=224058 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 15:46:52,152 p=224058 u=felixgason n=ansible | TASK [COPY HTML FILES] *********************************************************
+2023-09-26 15:46:53,161 p=224058 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 15:46:53,163 p=224058 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 15:46:53,212 p=224058 u=felixgason n=ansible | TASK [CREATE APACHE WEB SERVER] ************************************************
+2023-09-26 15:46:54,468 p=224058 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 15:46:54,491 p=224058 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 15:46:54,533 p=224058 u=felixgason n=ansible | TASK [CREATE PHP CONTAINER] ****************************************************
+2023-09-26 15:46:55,149 p=224058 u=felixgason n=ansible | fatal: [srv-web1-2297029]: FAILED! => {"changed": false, "msg": "dictionary requested, could not parse JSON or key=value"}
+2023-09-26 15:46:55,210 p=224058 u=felixgason n=ansible | fatal: [srv-web2-2297029]: FAILED! => {"changed": false, "msg": "dictionary requested, could not parse JSON or key=value"}
+2023-09-26 15:46:55,212 p=224058 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 15:46:55,212 p=224058 u=felixgason n=ansible | srv-web1-2297029           : ok=5    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-26 15:46:55,212 p=224058 u=felixgason n=ansible | srv-web2-2297029           : ok=5    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-26 15:52:02,470 p=224240 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 15:52:02,509 p=224240 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 15:52:04,851 p=224240 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:52:04,887 p=224240 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:52:04,925 p=224240 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 15:52:07,242 p=224240 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:52:07,248 p=224240 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:52:07,429 p=224240 u=felixgason n=ansible | TASK [CREATE HTML DIRECTORY] ***************************************************
+2023-09-26 15:52:07,963 p=224240 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:52:07,963 p=224240 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:52:08,003 p=224240 u=felixgason n=ansible | TASK [COPY HTML FILES] *********************************************************
+2023-09-26 15:52:08,823 p=224240 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:52:08,825 p=224240 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:52:08,866 p=224240 u=felixgason n=ansible | TASK [CREATE APACHE WEB SERVER] ************************************************
+2023-09-26 15:52:10,136 p=224240 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 15:52:10,138 p=224240 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 15:52:10,176 p=224240 u=felixgason n=ansible | TASK [CREATE PHP CONTAINER] ****************************************************
+2023-09-26 15:52:10,813 p=224240 u=felixgason n=ansible | fatal: [srv-web1-2297029]: FAILED! => {"changed": false, "msg": "Parameter error: network named backend could not be found. Does it exist?"}
+2023-09-26 15:52:10,862 p=224240 u=felixgason n=ansible | fatal: [srv-web2-2297029]: FAILED! => {"changed": false, "msg": "Parameter error: network named backend could not be found. Does it exist?"}
+2023-09-26 15:52:10,864 p=224240 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 15:52:10,864 p=224240 u=felixgason n=ansible | srv-web1-2297029           : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-26 15:52:10,864 p=224240 u=felixgason n=ansible | srv-web2-2297029           : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-26 15:53:32,694 p=224407 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 15:53:32,741 p=224407 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 15:53:35,083 p=224407 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:53:35,105 p=224407 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:53:35,148 p=224407 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 15:53:37,424 p=224407 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:53:37,529 p=224407 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:53:37,716 p=224407 u=felixgason n=ansible | TASK [CREATE HTML DIRECTORY] ***************************************************
+2023-09-26 15:53:38,262 p=224407 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:53:38,266 p=224407 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:53:38,316 p=224407 u=felixgason n=ansible | TASK [COPY HTML FILES] *********************************************************
+2023-09-26 15:53:39,126 p=224407 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:53:39,131 p=224407 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:53:39,176 p=224407 u=felixgason n=ansible | TASK [CREATE APACHE WEB SERVER] ************************************************
+2023-09-26 15:53:40,431 p=224407 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 15:53:40,437 p=224407 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 15:53:40,477 p=224407 u=felixgason n=ansible | TASK [CREATE BACKEND NETWORK] **************************************************
+2023-09-26 15:53:41,378 p=224407 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 15:53:41,382 p=224407 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 15:53:41,427 p=224407 u=felixgason n=ansible | TASK [CREATE PHP CONTAINER] ****************************************************
+2023-09-26 15:53:42,526 p=224407 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 15:53:42,610 p=224407 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 15:53:42,657 p=224407 u=felixgason n=ansible | TASK [UPDATE PHP SERVER] *******************************************************
+2023-09-26 15:53:58,905 p=224407 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 15:54:00,746 p=224407 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 15:54:00,795 p=224407 u=felixgason n=ansible | TASK [CREATE MARIADB CONTAINER] ************************************************
+2023-09-26 15:54:01,441 p=224407 u=felixgason n=ansible | fatal: [srv-web1-2297029]: FAILED! => {"changed": false, "msg": "argument 'env' is of type <class 'list'> and we were unable to convert to dict: <class 'list'> cannot be converted to a dict"}
+2023-09-26 15:54:01,511 p=224407 u=felixgason n=ansible | fatal: [srv-web2-2297029]: FAILED! => {"changed": false, "msg": "argument 'env' is of type <class 'list'> and we were unable to convert to dict: <class 'list'> cannot be converted to a dict"}
+2023-09-26 15:54:01,513 p=224407 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 15:54:01,513 p=224407 u=felixgason n=ansible | srv-web1-2297029           : ok=8    changed=4    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-26 15:54:01,513 p=224407 u=felixgason n=ansible | srv-web2-2297029           : ok=8    changed=4    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-26 15:54:44,067 p=224625 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 15:54:44,112 p=224625 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 15:54:45,708 p=224625 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:54:45,747 p=224625 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:54:45,788 p=224625 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 15:54:48,055 p=224625 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:54:48,113 p=224625 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:54:48,300 p=224625 u=felixgason n=ansible | TASK [CREATE HTML DIRECTORY] ***************************************************
+2023-09-26 15:54:48,884 p=224625 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:54:48,888 p=224625 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:54:48,945 p=224625 u=felixgason n=ansible | TASK [COPY HTML FILES] *********************************************************
+2023-09-26 15:54:49,837 p=224625 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:54:49,842 p=224625 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:54:49,890 p=224625 u=felixgason n=ansible | TASK [CREATE APACHE WEB SERVER] ************************************************
+2023-09-26 15:54:51,124 p=224625 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 15:54:51,138 p=224625 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 15:54:51,185 p=224625 u=felixgason n=ansible | TASK [CREATE BACKEND NETWORK] **************************************************
+2023-09-26 15:54:52,045 p=224625 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:54:52,047 p=224625 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:54:52,096 p=224625 u=felixgason n=ansible | TASK [CREATE PHP CONTAINER] ****************************************************
+2023-09-26 15:54:52,740 p=224625 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 15:54:52,802 p=224625 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 15:54:52,850 p=224625 u=felixgason n=ansible | TASK [UPDATE PHP SERVER] *******************************************************
+2023-09-26 15:55:10,227 p=224625 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 15:55:10,444 p=224625 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 15:55:10,486 p=224625 u=felixgason n=ansible | TASK [CREATE MARIADB CONTAINER] ************************************************
+2023-09-26 15:55:19,760 p=224625 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 15:55:19,808 p=224625 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 15:55:20,097 p=224625 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 15:55:20,097 p=224625 u=felixgason n=ansible | srv-web1-2297029           : ok=9    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 15:55:20,098 p=224625 u=felixgason n=ansible | srv-web2-2297029           : ok=9    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:03:02,489 p=224916 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 16:03:02,544 p=224916 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 16:03:05,060 p=224916 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:03:05,077 p=224916 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:03:05,122 p=224916 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 16:03:07,464 p=224916 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:03:07,623 p=224916 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:03:07,823 p=224916 u=felixgason n=ansible | TASK [CREATE HTML DIRECTORY] ***************************************************
+2023-09-26 16:03:08,373 p=224916 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:03:08,378 p=224916 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:03:08,419 p=224916 u=felixgason n=ansible | TASK [CREATE CONF DIRECTORY] ***************************************************
+2023-09-26 16:03:08,783 p=224916 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:03:08,848 p=224916 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:03:08,896 p=224916 u=felixgason n=ansible | TASK [COPY HTML FILES] *********************************************************
+2023-09-26 16:03:09,715 p=224916 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:03:09,720 p=224916 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:03:09,764 p=224916 u=felixgason n=ansible | TASK [COPY APACHE CONF] ********************************************************
+2023-09-26 16:03:09,862 p=224916 u=felixgason n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2023-09-26 16:03:09,863 p=224916 u=felixgason n=ansible | fatal: [srv-web1-2297029]: FAILED! => {"changed": false, "msg": "Could not find or access './webservers/confs/httpd:conf'\nSearched in:\n\t/home/felixgason/Dev/420-W45-SF_EFCS/files/./webservers/confs/httpd:conf\n\t/home/felixgason/Dev/420-W45-SF_EFCS/./webservers/confs/httpd:conf\n\t/home/felixgason/Dev/420-W45-SF_EFCS/files/./webservers/confs/httpd:conf\n\t/home/felixgason/Dev/420-W45-SF_EFCS/./webservers/confs/httpd:conf on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2023-09-26 16:03:09,927 p=224916 u=felixgason n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2023-09-26 16:03:09,927 p=224916 u=felixgason n=ansible | fatal: [srv-web2-2297029]: FAILED! => {"changed": false, "msg": "Could not find or access './webservers/confs/httpd:conf'\nSearched in:\n\t/home/felixgason/Dev/420-W45-SF_EFCS/files/./webservers/confs/httpd:conf\n\t/home/felixgason/Dev/420-W45-SF_EFCS/./webservers/confs/httpd:conf\n\t/home/felixgason/Dev/420-W45-SF_EFCS/files/./webservers/confs/httpd:conf\n\t/home/felixgason/Dev/420-W45-SF_EFCS/./webservers/confs/httpd:conf on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2023-09-26 16:03:09,929 p=224916 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 16:03:09,929 p=224916 u=felixgason n=ansible | srv-web1-2297029           : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:03:09,929 p=224916 u=felixgason n=ansible | srv-web2-2297029           : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:04:16,510 p=225075 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 16:04:16,549 p=225075 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 16:04:18,773 p=225075 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:04:18,777 p=225075 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:04:18,815 p=225075 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 16:04:21,164 p=225075 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:04:21,226 p=225075 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:04:21,418 p=225075 u=felixgason n=ansible | TASK [CREATE HTML DIRECTORY] ***************************************************
+2023-09-26 16:04:21,962 p=225075 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:04:21,966 p=225075 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:04:22,015 p=225075 u=felixgason n=ansible | TASK [CREATE CONF DIRECTORY] ***************************************************
+2023-09-26 16:04:22,375 p=225075 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:04:22,443 p=225075 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:04:22,493 p=225075 u=felixgason n=ansible | TASK [COPY HTML FILES] *********************************************************
+2023-09-26 16:04:23,340 p=225075 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:04:23,374 p=225075 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:04:23,426 p=225075 u=felixgason n=ansible | TASK [COPY APACHE CONF] ********************************************************
+2023-09-26 16:04:24,554 p=225075 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:04:24,555 p=225075 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:04:24,606 p=225075 u=felixgason n=ansible | TASK [CREATE APACHE WEB SERVER] ************************************************
+2023-09-26 16:04:25,897 p=225075 u=felixgason n=ansible | fatal: [srv-web1-2297029]: FAILED! => {"changed": false, "msg": "Error starting container 5b8bf11de246f76876db5128fb0fc98d7942e42f3a561146a306f1ceabfe1f57: 400 Client Error for http+docker://localhost/v1.43/containers/5b8bf11de246f76876db5128fb0fc98d7942e42f3a561146a306f1ceabfe1f57/start: Bad Request (\"failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: error mounting \"/home/admin/conf/httpd.conf\" to rootfs at \"/usr/local/apache2/conf\": mount /home/admin/conf/httpd.conf:/usr/local/apache2/conf (via /proc/self/fd/6), flags: 0x5000: not a directory: unknown: Are you trying to mount a directory onto a file (or vice-versa)? Check if the specified host path exists and is the expected type\")"}
+2023-09-26 16:04:25,915 p=225075 u=felixgason n=ansible | fatal: [srv-web2-2297029]: FAILED! => {"changed": false, "msg": "Error starting container 37ca7df8cb8eef1462222105a705e425ab86b6a2143be0db5a11a2b6b5839cab: 400 Client Error for http+docker://localhost/v1.43/containers/37ca7df8cb8eef1462222105a705e425ab86b6a2143be0db5a11a2b6b5839cab/start: Bad Request (\"failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: error mounting \"/home/admin/conf/httpd.conf\" to rootfs at \"/usr/local/apache2/conf\": mount /home/admin/conf/httpd.conf:/usr/local/apache2/conf (via /proc/self/fd/6), flags: 0x5000: not a directory: unknown: Are you trying to mount a directory onto a file (or vice-versa)? Check if the specified host path exists and is the expected type\")"}
+2023-09-26 16:04:25,919 p=225075 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 16:04:25,919 p=225075 u=felixgason n=ansible | srv-web1-2297029           : ok=6    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:04:25,919 p=225075 u=felixgason n=ansible | srv-web2-2297029           : ok=6    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:07:04,052 p=225287 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 16:07:04,094 p=225287 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 16:07:06,502 p=225287 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:07:06,538 p=225287 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:07:06,576 p=225287 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 16:07:08,886 p=225287 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:07:09,049 p=225287 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:07:09,238 p=225287 u=felixgason n=ansible | TASK [CREATE HTML DIRECTORY] ***************************************************
+2023-09-26 16:07:09,797 p=225287 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:07:09,804 p=225287 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:07:09,850 p=225287 u=felixgason n=ansible | TASK [CREATE CONF DIRECTORY] ***************************************************
+2023-09-26 16:07:10,222 p=225287 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:07:10,280 p=225287 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:07:10,322 p=225287 u=felixgason n=ansible | TASK [COPY HTML FILES] *********************************************************
+2023-09-26 16:07:11,138 p=225287 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:07:11,140 p=225287 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:07:11,180 p=225287 u=felixgason n=ansible | TASK [COPY APACHE CONF] ********************************************************
+2023-09-26 16:07:12,105 p=225287 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:07:12,160 p=225287 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:07:12,204 p=225287 u=felixgason n=ansible | TASK [CREATE APACHE WEB SERVER] ************************************************
+2023-09-26 16:07:13,551 p=225287 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:07:13,572 p=225287 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:07:13,620 p=225287 u=felixgason n=ansible | TASK [CREATE BACKEND NETWORK] **************************************************
+2023-09-26 16:07:14,477 p=225287 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:07:14,484 p=225287 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:07:14,533 p=225287 u=felixgason n=ansible | TASK [CREATE PHP CONTAINER] ****************************************************
+2023-09-26 16:07:15,174 p=225287 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:07:15,237 p=225287 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:07:15,285 p=225287 u=felixgason n=ansible | TASK [UPDATE PHP SERVER] *******************************************************
+2023-09-26 16:07:32,913 p=225287 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:07:34,152 p=225287 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:07:34,199 p=225287 u=felixgason n=ansible | TASK [CREATE MARIADB CONTAINER] ************************************************
+2023-09-26 16:07:35,259 p=225287 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:07:35,338 p=225287 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:07:35,627 p=225287 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 16:07:35,628 p=225287 u=felixgason n=ansible | srv-web1-2297029           : ok=11   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:07:35,628 p=225287 u=felixgason n=ansible | srv-web2-2297029           : ok=11   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:13:29,853 p=225752 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 16:13:29,904 p=225752 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 16:13:32,491 p=225752 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:13:32,507 p=225752 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:13:32,593 p=225752 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 16:13:35,148 p=225752 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:13:35,252 p=225752 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:13:35,451 p=225752 u=felixgason n=ansible | TASK [CREATE HTML DIRECTORY] ***************************************************
+2023-09-26 16:13:36,002 p=225752 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:13:36,004 p=225752 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:13:36,052 p=225752 u=felixgason n=ansible | TASK [CREATE CONF DIRECTORY] ***************************************************
+2023-09-26 16:13:36,414 p=225752 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:13:36,473 p=225752 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:13:36,520 p=225752 u=felixgason n=ansible | TASK [COPY HTML FILES] *********************************************************
+2023-09-26 16:13:37,336 p=225752 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:13:37,338 p=225752 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:13:37,387 p=225752 u=felixgason n=ansible | TASK [COPY APACHE CONF] ********************************************************
+2023-09-26 16:13:38,310 p=225752 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:13:38,351 p=225752 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:13:38,396 p=225752 u=felixgason n=ansible | TASK [CREATE APACHE WEB SERVER] ************************************************
+2023-09-26 16:13:40,918 p=225752 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:13:40,949 p=225752 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:13:40,997 p=225752 u=felixgason n=ansible | TASK [CREATE BACKEND NETWORK] **************************************************
+2023-09-26 16:13:41,828 p=225752 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:13:41,830 p=225752 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:13:41,876 p=225752 u=felixgason n=ansible | TASK [CREATE PHP CONTAINER] ****************************************************
+2023-09-26 16:13:42,541 p=225752 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:13:42,619 p=225752 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:13:42,665 p=225752 u=felixgason n=ansible | TASK [UPDATE PHP SERVER] *******************************************************
+2023-09-26 16:13:59,183 p=225752 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:13:59,548 p=225752 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:13:59,596 p=225752 u=felixgason n=ansible | TASK [CREATE MARIADB CONTAINER] ************************************************
+2023-09-26 16:14:00,331 p=225752 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:14:00,407 p=225752 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:14:00,708 p=225752 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 16:14:00,708 p=225752 u=felixgason n=ansible | srv-web1-2297029           : ok=11   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:14:00,709 p=225752 u=felixgason n=ansible | srv-web2-2297029           : ok=11   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:16:51,066 p=226038 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 16:16:51,104 p=226038 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 16:16:53,574 p=226038 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:16:54,596 p=226038 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:16:54,642 p=226038 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 16:16:56,917 p=226038 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:16:57,060 p=226038 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:16:57,252 p=226038 u=felixgason n=ansible | TASK [CREATE HTML DIRECTORY] ***************************************************
+2023-09-26 16:16:57,799 p=226038 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:16:57,808 p=226038 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:16:57,854 p=226038 u=felixgason n=ansible | TASK [CREATE CONF DIRECTORY] ***************************************************
+2023-09-26 16:16:58,218 p=226038 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:16:58,278 p=226038 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:16:58,327 p=226038 u=felixgason n=ansible | TASK [COPY HTML FILES] *********************************************************
+2023-09-26 16:16:59,397 p=226038 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:16:59,409 p=226038 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:16:59,465 p=226038 u=felixgason n=ansible | TASK [COPY APACHE CONF] ********************************************************
+2023-09-26 16:17:00,492 p=226038 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:17:00,558 p=226038 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:17:00,614 p=226038 u=felixgason n=ansible | TASK [CREATE APACHE WEB SERVER] ************************************************
+2023-09-26 16:17:01,624 p=226038 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:17:01,628 p=226038 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:17:01,682 p=226038 u=felixgason n=ansible | TASK [CREATE BACKEND NETWORK] **************************************************
+2023-09-26 16:17:02,549 p=226038 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:17:02,554 p=226038 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:17:02,604 p=226038 u=felixgason n=ansible | TASK [CREATE PHP CONTAINER] ****************************************************
+2023-09-26 16:17:03,254 p=226038 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:17:03,317 p=226038 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:17:03,365 p=226038 u=felixgason n=ansible | TASK [UPDATE PHP SERVER] *******************************************************
+2023-09-26 16:17:23,375 p=226038 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:17:23,526 p=226038 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:17:23,572 p=226038 u=felixgason n=ansible | TASK [CREATE MARIADB CONTAINER] ************************************************
+2023-09-26 16:17:24,227 p=226038 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:17:24,296 p=226038 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:17:24,597 p=226038 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 16:17:24,598 p=226038 u=felixgason n=ansible | srv-web1-2297029           : ok=11   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:17:24,598 p=226038 u=felixgason n=ansible | srv-web2-2297029           : ok=11   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:17:49,058 p=226320 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 16:17:49,096 p=226320 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 16:17:50,771 p=226320 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:17:50,817 p=226320 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:17:50,860 p=226320 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 16:17:53,185 p=226320 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:18:00,604 p=226320 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:18:00,796 p=226320 u=felixgason n=ansible | TASK [CREATE HTML DIRECTORY] ***************************************************
+2023-09-26 16:18:01,339 p=226320 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:18:01,346 p=226320 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:18:01,393 p=226320 u=felixgason n=ansible | TASK [CREATE CONF DIRECTORY] ***************************************************
+2023-09-26 16:18:01,758 p=226320 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:18:01,816 p=226320 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:18:01,864 p=226320 u=felixgason n=ansible | TASK [COPY HTML FILES] *********************************************************
+2023-09-26 16:18:02,889 p=226320 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:18:02,894 p=226320 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:18:02,942 p=226320 u=felixgason n=ansible | TASK [COPY APACHE CONF] ********************************************************
+2023-09-26 16:18:03,852 p=226320 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:18:03,910 p=226320 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:18:03,955 p=226320 u=felixgason n=ansible | TASK [CREATE APACHE WEB SERVER] ************************************************
+2023-09-26 16:18:04,954 p=226320 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:18:04,958 p=226320 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:18:05,006 p=226320 u=felixgason n=ansible | TASK [CREATE BACKEND NETWORK] **************************************************
+2023-09-26 16:18:05,835 p=226320 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:18:05,837 p=226320 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:18:05,882 p=226320 u=felixgason n=ansible | TASK [CREATE PHP CONTAINER] ****************************************************
+2023-09-26 16:18:06,524 p=226320 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:18:06,581 p=226320 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:18:06,625 p=226320 u=felixgason n=ansible | TASK [UPDATE PHP SERVER] *******************************************************
+2023-09-26 16:18:25,765 p=226320 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:18:26,161 p=226320 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:18:26,210 p=226320 u=felixgason n=ansible | TASK [CREATE MARIADB CONTAINER] ************************************************
+2023-09-26 16:18:26,913 p=226320 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:18:26,934 p=226320 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:18:27,226 p=226320 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 16:18:27,227 p=226320 u=felixgason n=ansible | srv-web1-2297029           : ok=11   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:18:27,227 p=226320 u=felixgason n=ansible | srv-web2-2297029           : ok=11   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:35:22,840 p=227065 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 16:35:22,892 p=227065 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 16:35:25,487 p=227065 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:35:25,507 p=227065 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:35:25,550 p=227065 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 16:35:27,927 p=227065 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:35:35,039 p=227065 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:35:35,232 p=227065 u=felixgason n=ansible | TASK [CREATE HTML DIRECTORY] ***************************************************
+2023-09-26 16:35:35,814 p=227065 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:35:35,814 p=227065 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:35:35,859 p=227065 u=felixgason n=ansible | TASK [CREATE CONF DIRECTORY] ***************************************************
+2023-09-26 16:35:36,227 p=227065 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:35:36,284 p=227065 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:35:36,330 p=227065 u=felixgason n=ansible | TASK [COPY HTML FILES] *********************************************************
+2023-09-26 16:35:37,394 p=227065 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:35:37,401 p=227065 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:35:37,453 p=227065 u=felixgason n=ansible | TASK [COPY APACHE CONF] ********************************************************
+2023-09-26 16:35:38,371 p=227065 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:35:38,437 p=227065 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:35:38,480 p=227065 u=felixgason n=ansible | TASK [CREATE APACHE WEB SERVER] ************************************************
+2023-09-26 16:35:39,541 p=227065 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:35:39,596 p=227065 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:35:39,643 p=227065 u=felixgason n=ansible | TASK [CREATE BACKEND NETWORK] **************************************************
+2023-09-26 16:35:40,504 p=227065 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:35:40,505 p=227065 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:35:40,565 p=227065 u=felixgason n=ansible | TASK [CREATE PHP CONTAINER] ****************************************************
+2023-09-26 16:35:41,426 p=227065 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:35:41,441 p=227065 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:35:41,486 p=227065 u=felixgason n=ansible | TASK [INSTALL PHP MYSQLI MODULE] ***********************************************
+2023-09-26 16:35:58,990 p=227065 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:36:02,330 p=227065 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:36:02,377 p=227065 u=felixgason n=ansible | TASK [CREATE MARIADB CONTAINER] ************************************************
+2023-09-26 16:36:03,047 p=227065 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:36:03,190 p=227065 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:36:03,487 p=227065 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 16:36:03,487 p=227065 u=felixgason n=ansible | srv-web1-2297029           : ok=11   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:36:03,487 p=227065 u=felixgason n=ansible | srv-web2-2297029           : ok=11   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:36:18,380 p=227341 u=felixgason n=ansible | ERROR! Decryption failed (no vault secrets were found that could decrypt) on /home/felixgason/Dev/420-W45-SF_EFCS/vars/secrets-vars.yaml
+2023-09-26 16:36:26,788 p=227363 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 16:36:26,835 p=227363 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 16:36:28,499 p=227363 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:36:28,582 p=227363 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:36:28,629 p=227363 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 16:36:30,963 p=227363 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:36:31,066 p=227363 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:36:31,268 p=227363 u=felixgason n=ansible | TASK [CREATE HTML DIRECTORY] ***************************************************
+2023-09-26 16:36:31,832 p=227363 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:36:31,850 p=227363 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:36:31,889 p=227363 u=felixgason n=ansible | TASK [CREATE CONF DIRECTORY] ***************************************************
+2023-09-26 16:36:32,270 p=227363 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:36:32,321 p=227363 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:36:32,365 p=227363 u=felixgason n=ansible | TASK [COPY HTML FILES] *********************************************************
+2023-09-26 16:36:33,369 p=227363 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:36:33,375 p=227363 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:36:33,425 p=227363 u=felixgason n=ansible | TASK [COPY APACHE CONF] ********************************************************
+2023-09-26 16:36:34,333 p=227363 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:36:34,395 p=227363 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:36:34,441 p=227363 u=felixgason n=ansible | TASK [CREATE APACHE WEB SERVER] ************************************************
+2023-09-26 16:36:35,434 p=227363 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:36:35,440 p=227363 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:36:35,482 p=227363 u=felixgason n=ansible | TASK [CREATE BACKEND NETWORK] **************************************************
+2023-09-26 16:36:36,335 p=227363 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:36:36,338 p=227363 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:36:36,379 p=227363 u=felixgason n=ansible | TASK [CREATE PHP CONTAINER] ****************************************************
+2023-09-26 16:36:37,022 p=227363 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:36:37,079 p=227363 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:36:37,125 p=227363 u=felixgason n=ansible | TASK [INSTALL PHP MYSQLI MODULE] ***********************************************
+2023-09-26 16:36:54,416 p=227363 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:36:54,613 p=227363 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:36:54,651 p=227363 u=felixgason n=ansible | TASK [CREATE MARIADB CONTAINER] ************************************************
+2023-09-26 16:36:55,305 p=227363 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:36:55,348 p=227363 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:36:55,667 p=227363 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 16:36:55,667 p=227363 u=felixgason n=ansible | srv-web1-2297029           : ok=11   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:36:55,667 p=227363 u=felixgason n=ansible | srv-web2-2297029           : ok=11   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:37:21,691 p=227634 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 16:37:21,731 p=227634 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 16:37:23,523 p=227634 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:37:23,583 p=227634 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:37:23,649 p=227634 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 16:37:26,050 p=227634 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:37:26,076 p=227634 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:37:26,273 p=227634 u=felixgason n=ansible | TASK [CREATE HTML DIRECTORY] ***************************************************
+2023-09-26 16:37:26,832 p=227634 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:37:26,833 p=227634 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:37:26,878 p=227634 u=felixgason n=ansible | TASK [CREATE CONF DIRECTORY] ***************************************************
+2023-09-26 16:37:27,247 p=227634 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:37:27,333 p=227634 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:37:27,383 p=227634 u=felixgason n=ansible | TASK [COPY HTML FILES] *********************************************************
+2023-09-26 16:37:28,402 p=227634 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:37:28,404 p=227634 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:37:28,454 p=227634 u=felixgason n=ansible | TASK [COPY APACHE CONF] ********************************************************
+2023-09-26 16:37:29,369 p=227634 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:37:29,430 p=227634 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:37:29,482 p=227634 u=felixgason n=ansible | TASK [CREATE APACHE WEB SERVER] ************************************************
+2023-09-26 16:37:30,465 p=227634 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:37:30,478 p=227634 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:37:30,524 p=227634 u=felixgason n=ansible | TASK [CREATE BACKEND NETWORK] **************************************************
+2023-09-26 16:37:31,383 p=227634 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:37:31,385 p=227634 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:37:31,437 p=227634 u=felixgason n=ansible | TASK [CREATE PHP CONTAINER] ****************************************************
+2023-09-26 16:37:32,073 p=227634 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:37:32,142 p=227634 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:37:32,188 p=227634 u=felixgason n=ansible | TASK [INSTALL PHP MYSQLI MODULE] ***********************************************
+2023-09-26 16:37:51,165 p=227634 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:37:51,604 p=227634 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:37:51,642 p=227634 u=felixgason n=ansible | TASK [CREATE MARIADB CONTAINER] ************************************************
+2023-09-26 16:37:52,294 p=227634 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:37:52,397 p=227634 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:37:52,747 p=227634 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 16:37:52,748 p=227634 u=felixgason n=ansible | srv-web1-2297029           : ok=11   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:37:52,748 p=227634 u=felixgason n=ansible | srv-web2-2297029           : ok=11   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:38:05,891 p=227907 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 16:38:05,936 p=227907 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 16:38:07,628 p=227907 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:38:07,640 p=227907 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:38:07,685 p=227907 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 16:38:09,962 p=227907 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:38:10,080 p=227907 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:38:10,274 p=227907 u=felixgason n=ansible | TASK [CREATE HTML DIRECTORY] ***************************************************
+2023-09-26 16:38:10,817 p=227907 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:38:10,863 p=227907 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:38:10,907 p=227907 u=felixgason n=ansible | TASK [CREATE CONF DIRECTORY] ***************************************************
+2023-09-26 16:38:11,281 p=227907 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:38:11,343 p=227907 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:38:11,398 p=227907 u=felixgason n=ansible | TASK [COPY HTML FILES] *********************************************************
+2023-09-26 16:38:12,431 p=227907 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:38:12,437 p=227907 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:38:12,480 p=227907 u=felixgason n=ansible | TASK [COPY APACHE CONF] ********************************************************
+2023-09-26 16:38:13,406 p=227907 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:38:13,488 p=227907 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:38:13,536 p=227907 u=felixgason n=ansible | TASK [CREATE APACHE WEB SERVER] ************************************************
+2023-09-26 16:38:14,569 p=227907 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:38:14,589 p=227907 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:38:14,659 p=227907 u=felixgason n=ansible | TASK [CREATE BACKEND NETWORK] **************************************************
+2023-09-26 16:38:15,696 p=227907 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:38:15,718 p=227907 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:38:15,778 p=227907 u=felixgason n=ansible | TASK [CREATE PHP CONTAINER] ****************************************************
+2023-09-26 16:38:16,491 p=227907 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:38:16,542 p=227907 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:38:16,646 p=227907 u=felixgason n=ansible | TASK [INSTALL PHP MYSQLI MODULE] ***********************************************
+2023-09-26 16:38:33,445 p=227907 u=felixgason n=ansible | fatal: [srv-web2-2297029]: FAILED! => {"changed": true, "rc": 2, "stderr": "libtool: link: `mysqli_api.lo' is not a valid libtool object\nmake: *** [Makefile:239: mysqli.la] Error 1", "stderr_lines": ["libtool: link: `mysqli_api.lo' is not a valid libtool object", "make: *** [Makefile:239: mysqli.la] Error 1"], "stdout": "fetch https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/APKINDEX.tar.gz\nfetch https://dl-cdn.alpinelinux.org/alpine/v3.18/community/x86_64/APKINDEX.tar.gz\n(1/27) Installing m4 (1.4.19-r3)\n(2/27) Installing libbz2 (1.0.8-r5)\n(3/27) Installing perl (5.36.1-r2)\n(4/27) Installing autoconf (2.71-r2)\n(5/27) Installing pkgconf (1.9.5-r0)\n(6/27) Installing dpkg-dev (1.21.21-r1)\n(7/27) Installing libmd (1.0.4-r2)\n(8/27) Installing dpkg (1.21.21-r1)\n(9/27) Installing libmagic (5.45-r0)\n(10/27) Installing file (5.45-r0)\n(11/27) Installing libstdc++ (12.2.1_git20220924-r10)\n(12/27) Installing libstdc++-dev (12.2.1_git20220924-r10)\n(13/27) Installing zstd-libs (1.5.5-r4)\n(14/27) Installing binutils (2.40-r7)\n(15/27) Installing libgomp (12.2.1_git20220924-r10)\n(16/27) Installing libatomic (12.2.1_git20220924-r10)\n(17/27) Installing gmp (6.2.1-r3)\n(18/27) Installing isl26 (0.26-r1)\n(19/27) Installing mpfr4 (4.2.0_p12-r0)\n(20/27) Installing mpc1 (1.3.1-r1)\n(21/27) Installing gcc (12.2.1_git20220924-r10)\n(22/27) Installing musl-dev (1.2.4-r1)\n(23/27) Installing libc-dev (0.7.2-r5)\n(24/27) Installing g++ (12.2.1_git20220924-r10)\n(25/27) Installing make (4.4.1-r1)\n(26/27) Installing re2c (3.0-r1)\n(27/27) Installing .phpize-deps (20230926.203820)\nExecuting busybox-1.36.1-r2.trigger\nOK: 298 MiB in 64 packages\nConfiguring for:\nPHP Api Version:         20220829\nZend Module Api No:      20220829\nZend Extension Api No:   420220829\nchecking for grep that handles long lines and -e... /bin/grep\nchecking for egrep... /bin/grep -E\nchecking for a sed that does not truncate output... /bin/sed\nchecking for pkg-config... /usr/bin/pkg-config\nchecking pkg-config is at least version 0.9.0... yes\nchecking for cc... cc\nchecking whether the C compiler works... yes\nchecking for C compiler default output file name... a.out\nchecking for suffix of executables... \nchecking whether we are cross compiling... no\nchecking for suffix of object files... o\nchecking whether the compiler supports GNU C... yes\nchecking whether cc accepts -g... yes\nchecking for cc option to enable C11 features... none needed\nchecking how to run the C preprocessor... cc -E\nchecking for icc... no\nchecking for suncc... no\nchecking for system library directory... lib\nchecking if compiler supports -Wl,-rpath,... yes\nchecking build system type... x86_64-pc-linux-musl\nchecking host system type... x86_64-pc-linux-musl\nchecking target system type... x86_64-pc-linux-musl\nchecking for PHP prefix... /usr/local\nchecking for PHP includes... -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib\nchecking for PHP extension directory... /usr/local/lib/php/extensions/no-debug-non-zts-20220829\nchecking for PHP installed headers prefix... /usr/local/include/php\nchecking if debug is enabled... no\nchecking if zts is enabled... no\nchecking for gawk... no\nchecking for nawk... no\nchecking for awk... awk\nchecking if awk is broken... no\nchecking for MySQLi support... yes, shared\nchecking for specified location of the MySQL UNIX socket... no\nchecking for MySQL UNIX socket location... no\nchecking for a sed that does not truncate output... /bin/sed\nchecking for ld used by cc... /usr/x86_64-alpine-linux-musl/bin/ld\nchecking if the linker (/usr/x86_64-alpine-linux-musl/bin/ld) is GNU ld... yes\nchecking for /usr/x86_64-alpine-linux-musl/bin/ld option to reload object files... -r\nchecking for BSD-compatible nm... /usr/bin/nm -B\nchecking whether ln -s works... yes\nchecking how to recognize dependent libraries... pass_all\nchecking for stdio.h... yes\nchecking for stdlib.h... yes\nchecking for string.h... yes\nchecking for inttypes.h... yes\nchecking for stdint.h... yes\nchecking for strings.h... yes\nchecking for sys/stat.h... yes\nchecking for sys/types.h... yes\nchecking for unistd.h... yes\nchecking for dlfcn.h... yes\nchecking the maximum length of command line arguments... 98304\nchecking command to parse /usr/bin/nm -B output from cc object... ok\nchecking for objdir... .libs\nchecking for ar... ar\nchecking for ranlib... ranlib\nchecking for strip... strip\nchecking if cc supports -fno-rtti -fno-exceptions... no\nchecking for cc option to produce PIC... -fPIC\nchecking if cc PIC flag -fPIC works... yes\nchecking if cc static flag -static works... yes\nchecking if cc supports -c -o file.o... yes\nchecking whether the cc linker (/usr/x86_64-alpine-linux-musl/bin/ld -m elf_x86_64) supports shared libraries... yes\nchecking whether -lc should be explicitly linked in... no\nchecking dynamic linker characteristics... GNU/Linux ld.so\nchecking how to hardcode library paths into programs... immediate\nchecking whether stripping libraries is possible... yes\nchecking if libtool supports shared libraries... yes\nchecking whether to build shared libraries... yes\nchecking whether to build static libraries... no\n\ncreating libtool\nappending configuration tag \"CXX\" to libtool\nconfigure: patching config.h.in\nconfigure: creating ./config.status\nconfig.status: creating config.h\n/bin/sh /usr/src/php/ext/mysqli/libtool --mode=compile cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli.c -o mysqli.lo  -MMD -MF mysqli.dep -MT mysqli.lo\nmkdir .libs\n cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli.c -MMD -MF mysqli.dep -MT mysqli.lo  -fPIC -DPIC -o .libs/mysqli.o\n/bin/sh /usr/src/php/ext/mysqli/libtool --mode=compile cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_api.c -o mysqli_api.lo  -MMD -MF mysqli_api.dep -MT mysqli_api.lo\n cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_api.c -MMD -MF mysqli_api.dep -MT mysqli_api.lo  -fPIC -DPIC -o .libs/mysqli_api.o\n/bin/sh /usr/src/php/ext/mysqli/libtool --mode=compile cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_prop.c -o mysqli_prop.lo  -MMD -MF mysqli_prop.dep -MT mysqli_prop.lo\n cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_prop.c -MMD -MF mysqli_prop.dep -MT mysqli_prop.lo  -fPIC -DPIC -o .libs/mysqli_prop.o\n/bin/sh /usr/src/php/ext/mysqli/libtool --mode=compile cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_nonapi.c -o mysqli_nonapi.lo  -MMD -MF mysqli_nonapi.dep -MT mysqli_nonapi.lo\n cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_nonapi.c -MMD -MF mysqli_nonapi.dep -MT mysqli_nonapi.lo  -fPIC -DPIC -o .libs/mysqli_nonapi.o\n/bin/sh /usr/src/php/ext/mysqli/libtool --mode=compile cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_report.c -o mysqli_report.lo  -MMD -MF mysqli_report.dep -MT mysqli_report.lo\n cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_report.c -MMD -MF mysqli_report.dep -MT mysqli_report.lo  -fPIC -DPIC -o .libs/mysqli_report.o\n/bin/sh /usr/src/php/ext/mysqli/libtool --mode=compile cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_driver.c -o mysqli_driver.lo  -MMD -MF mysqli_driver.dep -MT mysqli_driver.lo\n cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_driver.c -MMD -MF mysqli_driver.dep -MT mysqli_driver.lo  -fPIC -DPIC -o .libs/mysqli_driver.o\n/bin/sh /usr/src/php/ext/mysqli/libtool --mode=compile cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_warning.c -o mysqli_warning.lo  -MMD -MF mysqli_warning.dep -MT mysqli_warning.lo\n cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_warning.c -MMD -MF mysqli_warning.dep -MT mysqli_warning.lo  -fPIC -DPIC -o .libs/mysqli_warning.o\n/bin/sh /usr/src/php/ext/mysqli/libtool --mode=compile cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_exception.c -o mysqli_exception.lo  -MMD -MF mysqli_exception.dep -MT mysqli_exception.lo\n cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_exception.c -MMD -MF mysqli_exception.dep -MT mysqli_exception.lo  -fPIC -DPIC -o .libs/mysqli_exception.o\n/bin/sh /usr/src/php/ext/mysqli/libtool --mode=compile cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_result_iterator.c -o mysqli_result_iterator.lo  -MMD -MF mysqli_result_iterator.dep -MT mysqli_result_iterator.lo\n cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_result_iterator.c -MMD -MF mysqli_result_iterator.dep -MT mysqli_result_iterator.lo  -fPIC -DPIC -o .libs/mysqli_result_iterator.o\n/bin/sh /usr/src/php/ext/mysqli/libtool --mode=link cc -shared -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -Wl,-O1 -pie  -o mysqli.la -export-dynamic -avoid-version -prefer-pic -module -rpath /usr/src/php/ext/mysqli/modules  mysqli.lo mysqli_api.lo mysqli_prop.lo mysqli_nonapi.lo mysqli_report.lo mysqli_driver.lo mysqli_warning.lo mysqli_exception.lo mysqli_result_iterator.lo ", "stdout_lines": ["fetch https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/APKINDEX.tar.gz", "fetch https://dl-cdn.alpinelinux.org/alpine/v3.18/community/x86_64/APKINDEX.tar.gz", "(1/27) Installing m4 (1.4.19-r3)", "(2/27) Installing libbz2 (1.0.8-r5)", "(3/27) Installing perl (5.36.1-r2)", "(4/27) Installing autoconf (2.71-r2)", "(5/27) Installing pkgconf (1.9.5-r0)", "(6/27) Installing dpkg-dev (1.21.21-r1)", "(7/27) Installing libmd (1.0.4-r2)", "(8/27) Installing dpkg (1.21.21-r1)", "(9/27) Installing libmagic (5.45-r0)", "(10/27) Installing file (5.45-r0)", "(11/27) Installing libstdc++ (12.2.1_git20220924-r10)", "(12/27) Installing libstdc++-dev (12.2.1_git20220924-r10)", "(13/27) Installing zstd-libs (1.5.5-r4)", "(14/27) Installing binutils (2.40-r7)", "(15/27) Installing libgomp (12.2.1_git20220924-r10)", "(16/27) Installing libatomic (12.2.1_git20220924-r10)", "(17/27) Installing gmp (6.2.1-r3)", "(18/27) Installing isl26 (0.26-r1)", "(19/27) Installing mpfr4 (4.2.0_p12-r0)", "(20/27) Installing mpc1 (1.3.1-r1)", "(21/27) Installing gcc (12.2.1_git20220924-r10)", "(22/27) Installing musl-dev (1.2.4-r1)", "(23/27) Installing libc-dev (0.7.2-r5)", "(24/27) Installing g++ (12.2.1_git20220924-r10)", "(25/27) Installing make (4.4.1-r1)", "(26/27) Installing re2c (3.0-r1)", "(27/27) Installing .phpize-deps (20230926.203820)", "Executing busybox-1.36.1-r2.trigger", "OK: 298 MiB in 64 packages", "Configuring for:", "PHP Api Version:         20220829", "Zend Module Api No:      20220829", "Zend Extension Api No:   420220829", "checking for grep that handles long lines and -e... /bin/grep", "checking for egrep... /bin/grep -E", "checking for a sed that does not truncate output... /bin/sed", "checking for pkg-config... /usr/bin/pkg-config", "checking pkg-config is at least version 0.9.0... yes", "checking for cc... cc", "checking whether the C compiler works... yes", "checking for C compiler default output file name... a.out", "checking for suffix of executables... ", "checking whether we are cross compiling... no", "checking for suffix of object files... o", "checking whether the compiler supports GNU C... yes", "checking whether cc accepts -g... yes", "checking for cc option to enable C11 features... none needed", "checking how to run the C preprocessor... cc -E", "checking for icc... no", "checking for suncc... no", "checking for system library directory... lib", "checking if compiler supports -Wl,-rpath,... yes", "checking build system type... x86_64-pc-linux-musl", "checking host system type... x86_64-pc-linux-musl", "checking target system type... x86_64-pc-linux-musl", "checking for PHP prefix... /usr/local", "checking for PHP includes... -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib", "checking for PHP extension directory... /usr/local/lib/php/extensions/no-debug-non-zts-20220829", "checking for PHP installed headers prefix... /usr/local/include/php", "checking if debug is enabled... no", "checking if zts is enabled... no", "checking for gawk... no", "checking for nawk... no", "checking for awk... awk", "checking if awk is broken... no", "checking for MySQLi support... yes, shared", "checking for specified location of the MySQL UNIX socket... no", "checking for MySQL UNIX socket location... no", "checking for a sed that does not truncate output... /bin/sed", "checking for ld used by cc... /usr/x86_64-alpine-linux-musl/bin/ld", "checking if the linker (/usr/x86_64-alpine-linux-musl/bin/ld) is GNU ld... yes", "checking for /usr/x86_64-alpine-linux-musl/bin/ld option to reload object files... -r", "checking for BSD-compatible nm... /usr/bin/nm -B", "checking whether ln -s works... yes", "checking how to recognize dependent libraries... pass_all", "checking for stdio.h... yes", "checking for stdlib.h... yes", "checking for string.h... yes", "checking for inttypes.h... yes", "checking for stdint.h... yes", "checking for strings.h... yes", "checking for sys/stat.h... yes", "checking for sys/types.h... yes", "checking for unistd.h... yes", "checking for dlfcn.h... yes", "checking the maximum length of command line arguments... 98304", "checking command to parse /usr/bin/nm -B output from cc object... ok", "checking for objdir... .libs", "checking for ar... ar", "checking for ranlib... ranlib", "checking for strip... strip", "checking if cc supports -fno-rtti -fno-exceptions... no", "checking for cc option to produce PIC... -fPIC", "checking if cc PIC flag -fPIC works... yes", "checking if cc static flag -static works... yes", "checking if cc supports -c -o file.o... yes", "checking whether the cc linker (/usr/x86_64-alpine-linux-musl/bin/ld -m elf_x86_64) supports shared libraries... yes", "checking whether -lc should be explicitly linked in... no", "checking dynamic linker characteristics... GNU/Linux ld.so", "checking how to hardcode library paths into programs... immediate", "checking whether stripping libraries is possible... yes", "checking if libtool supports shared libraries... yes", "checking whether to build shared libraries... yes", "checking whether to build static libraries... no", "", "creating libtool", "appending configuration tag \"CXX\" to libtool", "configure: patching config.h.in", "configure: creating ./config.status", "config.status: creating config.h", "/bin/sh /usr/src/php/ext/mysqli/libtool --mode=compile cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli.c -o mysqli.lo  -MMD -MF mysqli.dep -MT mysqli.lo", "mkdir .libs", " cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli.c -MMD -MF mysqli.dep -MT mysqli.lo  -fPIC -DPIC -o .libs/mysqli.o", "/bin/sh /usr/src/php/ext/mysqli/libtool --mode=compile cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_api.c -o mysqli_api.lo  -MMD -MF mysqli_api.dep -MT mysqli_api.lo", " cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_api.c -MMD -MF mysqli_api.dep -MT mysqli_api.lo  -fPIC -DPIC -o .libs/mysqli_api.o", "/bin/sh /usr/src/php/ext/mysqli/libtool --mode=compile cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_prop.c -o mysqli_prop.lo  -MMD -MF mysqli_prop.dep -MT mysqli_prop.lo", " cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_prop.c -MMD -MF mysqli_prop.dep -MT mysqli_prop.lo  -fPIC -DPIC -o .libs/mysqli_prop.o", "/bin/sh /usr/src/php/ext/mysqli/libtool --mode=compile cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_nonapi.c -o mysqli_nonapi.lo  -MMD -MF mysqli_nonapi.dep -MT mysqli_nonapi.lo", " cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_nonapi.c -MMD -MF mysqli_nonapi.dep -MT mysqli_nonapi.lo  -fPIC -DPIC -o .libs/mysqli_nonapi.o", "/bin/sh /usr/src/php/ext/mysqli/libtool --mode=compile cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_report.c -o mysqli_report.lo  -MMD -MF mysqli_report.dep -MT mysqli_report.lo", " cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_report.c -MMD -MF mysqli_report.dep -MT mysqli_report.lo  -fPIC -DPIC -o .libs/mysqli_report.o", "/bin/sh /usr/src/php/ext/mysqli/libtool --mode=compile cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_driver.c -o mysqli_driver.lo  -MMD -MF mysqli_driver.dep -MT mysqli_driver.lo", " cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_driver.c -MMD -MF mysqli_driver.dep -MT mysqli_driver.lo  -fPIC -DPIC -o .libs/mysqli_driver.o", "/bin/sh /usr/src/php/ext/mysqli/libtool --mode=compile cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_warning.c -o mysqli_warning.lo  -MMD -MF mysqli_warning.dep -MT mysqli_warning.lo", " cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_warning.c -MMD -MF mysqli_warning.dep -MT mysqli_warning.lo  -fPIC -DPIC -o .libs/mysqli_warning.o", "/bin/sh /usr/src/php/ext/mysqli/libtool --mode=compile cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_exception.c -o mysqli_exception.lo  -MMD -MF mysqli_exception.dep -MT mysqli_exception.lo", " cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_exception.c -MMD -MF mysqli_exception.dep -MT mysqli_exception.lo  -fPIC -DPIC -o .libs/mysqli_exception.o", "/bin/sh /usr/src/php/ext/mysqli/libtool --mode=compile cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE   -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_result_iterator.c -o mysqli_result_iterator.lo  -MMD -MF mysqli_result_iterator.dep -MT mysqli_result_iterator.lo", " cc -I. -I/usr/src/php/ext/mysqli -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DZEND_COMPILE_DL_EXT=1 -c /usr/src/php/ext/mysqli/mysqli_result_iterator.c -MMD -MF mysqli_result_iterator.dep -MT mysqli_result_iterator.lo  -fPIC -DPIC -o .libs/mysqli_result_iterator.o", "/bin/sh /usr/src/php/ext/mysqli/libtool --mode=link cc -shared -I/usr/src/php/ext/mysqli/include -I/usr/src/php/ext/mysqli/main -I/usr/src/php/ext/mysqli -I/usr/local/include/php -I/usr/local/include/php/main -I/usr/local/include/php/TSRM -I/usr/local/include/php/Zend -I/usr/local/include/php/ext -I/usr/local/include/php/ext/date/lib  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_CONFIG_H  -fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -Wl,-O1 -pie  -o mysqli.la -export-dynamic -avoid-version -prefer-pic -module -rpath /usr/src/php/ext/mysqli/modules  mysqli.lo mysqli_api.lo mysqli_prop.lo mysqli_nonapi.lo mysqli_report.lo mysqli_driver.lo mysqli_warning.lo mysqli_exception.lo mysqli_result_iterator.lo "]}
+2023-09-26 16:38:33,573 p=227907 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:38:33,631 p=227907 u=felixgason n=ansible | TASK [CREATE MARIADB CONTAINER] ************************************************
+2023-09-26 16:38:34,276 p=227907 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:38:34,430 p=227907 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 16:38:34,430 p=227907 u=felixgason n=ansible | srv-web1-2297029           : ok=11   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:38:34,430 p=227907 u=felixgason n=ansible | srv-web2-2297029           : ok=9    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:43:19,514 p=228179 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 16:43:19,559 p=228179 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 16:43:21,969 p=228179 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:43:22,078 p=228179 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:43:22,130 p=228179 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 16:43:24,432 p=228179 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:43:24,482 p=228179 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:43:24,666 p=228179 u=felixgason n=ansible | TASK [CREATE HTML DIRECTORY] ***************************************************
+2023-09-26 16:43:25,211 p=228179 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:43:25,216 p=228179 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:43:25,264 p=228179 u=felixgason n=ansible | TASK [CREATE CONF DIRECTORY] ***************************************************
+2023-09-26 16:43:25,624 p=228179 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:43:25,688 p=228179 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:43:25,736 p=228179 u=felixgason n=ansible | TASK [COPY HTML FILES] *********************************************************
+2023-09-26 16:43:26,558 p=228179 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:43:26,562 p=228179 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:43:26,612 p=228179 u=felixgason n=ansible | TASK [COPY APACHE CONF] ********************************************************
+2023-09-26 16:43:27,521 p=228179 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:43:27,574 p=228179 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:43:27,620 p=228179 u=felixgason n=ansible | TASK [CREATE APACHE WEB SERVER] ************************************************
+2023-09-26 16:43:28,610 p=228179 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:43:29,024 p=228179 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:43:29,072 p=228179 u=felixgason n=ansible | TASK [CREATE BACKEND NETWORK] **************************************************
+2023-09-26 16:43:29,899 p=228179 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:43:29,939 p=228179 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:43:29,988 p=228179 u=felixgason n=ansible | TASK [CREATE PHP CONTAINER] ****************************************************
+2023-09-26 16:43:30,680 p=228179 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:43:31,067 p=228179 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:43:31,116 p=228179 u=felixgason n=ansible | TASK [INSTALL PHP MYSQLI MODULE] ***********************************************
+2023-09-26 16:44:22,270 p=228179 u=felixgason n=ansible | changed: [srv-web1-2297029]
+2023-09-26 16:44:25,691 p=228179 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:44:25,748 p=228179 u=felixgason n=ansible | TASK [CREATE MARIADB CONTAINER] ************************************************
+2023-09-26 16:44:26,424 p=228179 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:44:26,823 p=228179 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-09-26 16:44:27,117 p=228179 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-09-26 16:44:27,117 p=228179 u=felixgason n=ansible | srv-web1-2297029           : ok=11   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:44:27,117 p=228179 u=felixgason n=ansible | srv-web2-2297029           : ok=11   changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-26 16:44:48,205 p=228460 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-09-26 16:44:48,247 p=228460 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-09-26 16:44:50,060 p=228460 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:44:50,119 p=228460 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:44:50,172 p=228460 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-09-26 16:44:52,632 p=228460 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:44:52,637 p=228460 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:44:52,828 p=228460 u=felixgason n=ansible | TASK [CREATE HTML DIRECTORY] ***************************************************
+2023-09-26 16:44:53,388 p=228460 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:44:53,393 p=228460 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:44:53,438 p=228460 u=felixgason n=ansible | TASK [CREATE CONF DIRECTORY] ***************************************************
+2023-09-26 16:44:53,831 p=228460 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:44:53,879 p=228460 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:44:53,925 p=228460 u=felixgason n=ansible | TASK [COPY HTML FILES] *********************************************************
+2023-09-26 16:44:54,754 p=228460 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:44:54,755 p=228460 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:44:54,804 p=228460 u=felixgason n=ansible | TASK [COPY APACHE CONF] ********************************************************
+2023-09-26 16:44:55,732 p=228460 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:44:55,786 p=228460 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:44:55,834 p=228460 u=felixgason n=ansible | TASK [CREATE APACHE WEB SERVER] ************************************************
+2023-09-26 16:44:56,844 p=228460 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:44:56,847 p=228460 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:44:56,897 p=228460 u=felixgason n=ansible | TASK [CREATE BACKEND NETWORK] **************************************************
+2023-09-26 16:44:57,735 p=228460 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:44:57,748 p=228460 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:44:57,798 p=228460 u=felixgason n=ansible | TASK [CREATE PHP CONTAINER] ****************************************************
+2023-09-26 16:44:58,447 p=228460 u=felixgason n=ansible | ok: [srv-web1-2297029]
+2023-09-26 16:44:58,598 p=228460 u=felixgason n=ansible | ok: [srv-web2-2297029]
+2023-09-26 16:44:58,686 p=228460 u=felixgason n=ansible | TASK [INSTALL PHP MYSQLI MODULE] ***********************************************
+2023-09-26 16:46:01,114 p=228460 u=felixgason n=ansible | changed: [srv-web2-2297029]
+2023-10-02 11:38:45,773 p=5591 u=felixgason n=ansible | ERROR! Decryption failed (no vault secrets were found that could decrypt) on /home/felixgason/Dev/420-W45-SF_EFCS/vars/secrets-vars.yaml
+2023-10-02 11:38:51,890 p=5620 u=felixgason n=ansible | PLAY [Docker Nginx Load Balancer] **********************************************
+2023-10-02 11:38:51,965 p=5620 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-10-02 11:39:25,307 p=5620 u=felixgason n=ansible | ok: [srv-lb1-2297029]
+2023-10-02 11:39:25,462 p=5620 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-10-02 11:48:07,613 p=6407 u=felixgason n=ansible | [WARNING]: Error in vault password prompt (default): Invalid vault password was
+provided
+
+2023-10-02 11:48:07,614 p=6407 u=felixgason n=ansible | ERROR! Invalid vault password was provided
+2023-10-02 11:48:20,045 p=6439 u=felixgason n=ansible | ERROR! the playbook: webservers.yaml could not be found
+2023-10-02 11:48:42,714 p=6459 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-10-02 11:48:42,764 p=6459 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-10-02 11:48:43,825 p=6459 u=felixgason n=ansible | fatal: [srv-web1-2297029]: UNREACHABLE! => {"changed": false, "msg": "mkdir: cannot create directory ‘/home/admin/.ansible/tmp/ansible-tmp-1696261723.797426-6463-8753959401834’: No space left on device\n", "unreachable": true}
+2023-10-02 11:48:44,032 p=6459 u=felixgason n=ansible | fatal: [srv-web2-2297029]: UNREACHABLE! => {"changed": false, "msg": "mkdir: cannot create directory ‘/home/admin/.ansible/tmp/ansible-tmp-1696261724.0051086-6465-88654684786408’: No space left on device\n", "unreachable": true}
+2023-10-02 11:48:44,033 p=6459 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-10-02 11:48:44,034 p=6459 u=felixgason n=ansible | srv-web1-2297029           : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-10-02 11:48:44,034 p=6459 u=felixgason n=ansible | srv-web2-2297029           : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-10-02 11:50:01,659 p=5620 u=felixgason n=ansible | fatal: [srv-lb1-2297029]: FAILED! => {"changed": false, "msg": "Failed to update apt cache: unknown reason"}
+2023-10-02 11:50:01,660 p=5620 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-10-02 11:50:01,661 p=5620 u=felixgason n=ansible | srv-lb1-2297029            : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-10-02 11:50:15,801 p=6507 u=felixgason n=ansible | PLAY [Apache servers with PHP and MySQL] ***************************************
+2023-10-02 11:50:15,846 p=6507 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-10-02 11:50:16,660 p=6507 u=felixgason n=ansible | fatal: [srv-web1-2297029]: UNREACHABLE! => {"changed": false, "msg": "mkdir: cannot create directory ‘/home/admin/.ansible/tmp/ansible-tmp-1696261816.6318226-6521-16013466391220’: No space left on device\n", "unreachable": true}
+2023-10-02 11:50:16,712 p=6507 u=felixgason n=ansible | fatal: [srv-web2-2297029]: UNREACHABLE! => {"changed": false, "msg": "mkdir: cannot create directory ‘/home/admin/.ansible/tmp/ansible-tmp-1696261816.6878483-6523-89765189779648’: No space left on device\n", "unreachable": true}
+2023-10-02 11:50:16,713 p=6507 u=felixgason n=ansible | PLAY RECAP *********************************************************************
+2023-10-02 11:50:16,714 p=6507 u=felixgason n=ansible | srv-web1-2297029           : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-10-02 11:50:16,714 p=6507 u=felixgason n=ansible | srv-web2-2297029           : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-10-02 11:55:04,407 p=6584 u=felixgason n=ansible | srv-lb1-2297029 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-10-02 11:55:18,429 p=6619 u=felixgason n=ansible | srv-web1-2297029 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "mkdir: cannot create directory ‘/home/admin/.ansible/tmp/ansible-tmp-1696262118.4039586-6623-2185382898299’: No space left on device\n",
+    "unreachable": true
+}
+2023-10-02 11:55:18,495 p=6619 u=felixgason n=ansible | srv-web2-2297029 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "mkdir: cannot create directory ‘/home/admin/.ansible/tmp/ansible-tmp-1696262118.472289-6624-25163970255372’: No space left on device\n",
+    "unreachable": true
+}
+2023-10-02 13:25:49,870 p=7695 u=felixgason n=ansible | PLAY [Docker Nginx Load Balancer] **********************************************
+2023-10-02 13:25:49,920 p=7695 u=felixgason n=ansible | TASK [Gathering Facts] *********************************************************
+2023-10-02 13:26:22,487 p=7695 u=felixgason n=ansible | ok: [srv-lb1-2297029]
+2023-10-02 13:26:22,528 p=7695 u=felixgason n=ansible | TASK [INSTALL DOCKER] **********************************************************
+2023-10-02 13:26:31,948 p=7695 u=felixgason n=ansible |  [ERROR]: User interrupted execution
+

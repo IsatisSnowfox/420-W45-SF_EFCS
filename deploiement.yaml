@@ -1,0 +1,4 @@
+- name: Configure Loadbalancer
+  ansible.builtin.import_playbook: loadbalancer.yaml
+- name: Configure Webserver
+  ansible.builtin.import_playbook: web.yaml

@@ -1,0 +1,32 @@
+- name: "Docker Nginx Load Balancer"
+  hosts: lbservers
+  become: true
+  vars_files:
+    - ./vars/secrets-vars.yaml
+  pre_tasks:
+    - name: INSTALL DOCKER
+      apt:
+        name: docker.io
+        state: present
+        update_cache: yes
+  tasks:
+    - name: CREATE CONF DIRECTORY
+      ansible.builtin.file:
+        path: /home/admin/conf
+        state: directory
+        owner: admin
+        group: admin
+        mode: 0775
+    - name: COPY NGINX CONF
+      copy:
+        src: ./nginx/default.conf/
+        dest: /home/admin/conf/
+        mode: 0755
+    - name: CREATE NGINX LOAD BALANCER
+      community.docker.docker_container:
+        name: loadbalancer
+        image: nginx:alpine
+        ports:
+          - "80:80"
+        volumes:
+          - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro

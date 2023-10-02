@@ -1,0 +1,74 @@
+- name: "Apache servers with PHP and MySQL"
+  hosts: webservers
+  become: true
+  vars_files:
+    - ./vars/secrets-vars.yaml
+  pre_tasks:
+    - name: INSTALL DOCKER
+      apt:
+        name: docker.io
+        state: present
+        update_cache: yes
+  tasks:
+    - name: CREATE HTML DIRECTORY
+      ansible.builtin.file:
+        path: /home/admin/html
+        state: directory
+        owner: admin
+        group: admin
+        mode: 0775
+    - name: CREATE CONF DIRECTORY
+      ansible.builtin.file:
+        path: /home/admin/conf
+        state: directory
+        owner: admin
+        group: admin
+        mode: 0775
+    - name: COPY HTML FILES
+      copy:
+        src: ./html/
+        dest: /home/admin/html/
+        mode: 0755
+    - name: COPY APACHE CONF
+      copy:
+        src: ./webservers/confs/httpd.conf
+        dest: /home/admin/conf
+
+    - name: CREATE APACHE WEB SERVER
+      community.docker.docker_container:
+        name: webserver
+        image: httpd:alpine
+        networks:
+          - name: backend
+        ports:
+          "80:80"
+        volumes:
+          - /home/admin/conf/httpd.conf:/usr/local/apache2/conf/httpd.conf
+    - name: CREATE BACKEND NETWORK
+      community.docker.docker_network:
+        name: backend
+    - name: CREATE PHP CONTAINER
+      community.docker.docker_container:
+        name: php
+        image: php:fpm-alpine
+        networks:
+          - name: backend
+        volumes:
+          - /home/admin/html:/usr/local/apache2/htdocs
+    - name: INSTALL PHP MYSQLI MODULE
+      community.docker.docker_container_exec:
+        container: php
+        command: "docker-php-ext-install mysqli"
+    - name: CREATE MARIADB CONTAINER
+      community.docker.docker_container:
+        name: mariadb
+        image: mariadb
+        env:
+          MARIADB_ROOT_PASSWORD: rootpassword
+        networks:
+          - name: backend
+        volumes:
+          - dbdata:/var/lib/mysql
+        
+
+
